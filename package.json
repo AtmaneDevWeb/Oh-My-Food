@@ -1,0 +1,22 @@
+{
+  "name": "atmane_hamed_3_code_042022",
+  "version": "1.0.0",
+  "description": "Projet Oh My Food OpenClassRooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtmaneDevWeb/Oh-My-Food.git"
+  },
+  "author": "ATMANE Hamed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtmaneDevWeb/Oh-My-Food/issues"
+  },
+  "homepage": "https://github.com/AtmaneDevWeb/Oh-My-Food#readme",
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
+}
