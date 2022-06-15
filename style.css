@@ -21,6 +21,18 @@ header {
   position: relative;
 }
 
+header h1 {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
 main .city {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,15 +43,54 @@ main .city {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f5eaea;
-  gap: 20px;
+  background-color: #efefef;
+  gap: 17px;
 }
 
 main .city i {
-  font-size: 20px;
+  font-size: 15px;
+}
+
+main .city h2 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 main .explore {
   text-align: center;
+}
+
+main .explore h2 {
+  margin: 0;
+  padding-top: 45px;
+  font-size: 23px;
+}
+
+main .explore p {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 32px;
+  font-size: 18px;
+}
+
+main .explore button {
+  width: 52%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9360dc), to(#ff79da));
+  background-image: linear-gradient(to top, #9360dc, #ff79da);
+  border-radius: 27px;
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+main .steps h2 {
+  margin-top: 90px;
+  margin-bottom: 33px;
 }
 /*# sourceMappingURL=style.css.map */

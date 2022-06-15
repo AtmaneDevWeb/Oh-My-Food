@@ -1,0 +1,17 @@
+main .city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    gap: 17px;
+    & i {
+        font-size: 15px;
+    }
+    & h2 {
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 14px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

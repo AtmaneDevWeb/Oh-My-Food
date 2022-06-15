@@ -1,0 +1,30 @@
+main .explore {
+  text-align: center;
+}
+
+main .explore h2 {
+  margin: 0;
+  padding-top: 45px;
+  font-size: 23px;
+}
+
+main .explore p {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 32px;
+  font-size: 18px;
+}
+
+main .explore button {
+  width: 52%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9360dc), to(#ff79da));
+  background-image: linear-gradient(to top, #9360dc, #ff79da);
+  border-radius: 27px;
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+/*# sourceMappingURL=explore.css.map */
