@@ -16,13 +16,13 @@ main .explore p {
 }
 
 main .explore button {
-  width: 52%;
+  width: 53%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9360dc), to(#ff79da));
   background-image: linear-gradient(to top, #9360dc, #ff79da);
   border-radius: 27px;
   padding: 15px;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;

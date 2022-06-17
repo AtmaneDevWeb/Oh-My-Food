@@ -1,9 +1,10 @@
+@import "../utils/box-shadows";
 header {
     font-family: "shrikhand", cursive;
     text-align: center;
     padding: 3px;
-    box-shadow: 0px 0px 6px 0px grey;
     position: relative;
+    @include standard-shadow;
     & h1 {
         margin: 0;
         padding-top: 4px;

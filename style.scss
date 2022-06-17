@@ -1,10 +1,13 @@
 
-@import "./sass/base/base";
-@import "./sass/layout/header";
-@import "./sass/layout/header_h1";
-@import "./sass/layout/city";
-@import "./sass/layout/explore";
-@import "./sass/layout/steps";
+@use "./sass/base/_base";
+@use "./sass/layout/_header";
+@use "./sass/layout/_header_h1";
+@use "./sass/layout/_city";
+@use "./sass/layout/_explore";
+@use "./sass/layout/_steps";
+@use "./sass/utils/_variables";
+
+
 
 
 
