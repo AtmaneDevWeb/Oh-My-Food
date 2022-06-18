@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh My Food</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>ohmyfood</h1>
-    </header>
-    <main>
-        <div class="city">
-            <i class="fas fa-map-marker-alt"></i>
-            <h2>Paris, Belleville</h2>
+    
+<!------------------------header_section ------------------------------>
+
+<header>
+    <h1>ohmyfood</h1>
+</header>
+
+<!------------------------Main_section -------------------------------->
+<main id="main">
+    <div class="city">
+        <i class="fas fa-map-marker-alt"></i>
+        <h2>Paris, Belleville</h2>
+    </div>
+    <div class="explore">
+        <h2>Réservez le menu qui <br> vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <button>Explorer nos restaurants</button>
+    </div>
+    <div class="steps">
+        <h2>Foncionnement</h2>
+        <ol>
+            <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
+            <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
+            <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+        </ol>
+    </div>
+    <section id="restaurants">
+        <h2 class="restaurants__title">restaurant</h2>
+        <div class="restaurants__cards">
+            <div class="card">
+                <a href="./pages/La-palette-du-gout.html">
+                    <div class="card__image">
+                        <img src="./assets/restaurants/menu1.jpg" alt="la La palette du gout" class="card_image_img">
+                        <p class="card__image__textcover">Nouveau</p>
+                    </div>
+                    <div class="card__descript">
+                        <div>
+                            <h3 class="card__descript__title">La palette du goût</h3>
+                            <p class="card__descript__place">Ménilmontant</p>
+                        </div>
+                        <div class="card__descript__icon">
+                            <i class="far fa-heart empty-heart"></i>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="./pages/La note enchantee.html">
+                    <div class="card__image">
+                        <img src="./assets/restaurants/menu3.jpg" alt="la note enchantée">
+                        <p class="card__image__textcover">Nouveau</p>
+                    </div>
+                    <div class="card__descript"></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="./pages/A la francaise.html">
+                    <div class="card__image">
+                        <img src="./assets/restaurants/menu4.jpg" alt="a la francaise">
+                        <p class="card__image__textcover">Nouveau</p>
+                    </div>
+                    <div class="card__descript">
+                        <div>
+                            <h3 class="card__descript__title">A la Française</h3>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="./pages/Le delice des sens.html">
+                    <div class="card__image">
+                        <img src="./assets/restaurants/menu2.jpg" alt="le délie des sens">
+                        <p class="card__image__textcover">Nouveau</p>
+                    </div>
+                    <div class="card__descript"></div>
+                </a>
+            </div>
+
         </div>
-        <div class="explore">
-            <h2>Réservez le menu qui <br> vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button>Explorer nos restaurants</button>
-        </div>
-        <div class="steps">
-            <h2>Foncionnement</h2>
-            <ol>
-                <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
-                <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
-                <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
-            </ol>
-        </div>
-    </main>
+    </section>
+</main>
+
+<!------------------------footer_section ------------------------------>
+
 </body>
 </html>
