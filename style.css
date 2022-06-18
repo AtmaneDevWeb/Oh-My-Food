@@ -119,6 +119,8 @@ main .steps li {
   position: relative;
   border: 1px solid yellow;
   background-color: antiquewhite;
+  top: 10%;
+  left: 75%;
 }
 #restaurants .card .card__descript {
   height: 60px;
