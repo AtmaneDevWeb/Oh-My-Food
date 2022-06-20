@@ -1,0 +1,16 @@
+
+header {
+    display: flex;
+    align-items: center;
+    & .home_back {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    & .title {
+        padding-left: 60px;
+    }
+}
+ 
+.banner img {
+    max-width: 100%;
+}

@@ -148,4 +148,20 @@ main .steps li {
   display: flex;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+header .home_back {
+  font-size: 20px;
+  margin-left: 20px;
+}
+header .title {
+  padding-left: 60px;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
