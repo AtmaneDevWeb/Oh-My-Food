@@ -153,8 +153,11 @@ header {
   align-items: center;
 }
 header .home_back {
-  font-size: 20px;
   margin-left: 20px;
+}
+header .back__icon {
+  color: #505050;
+  font-size: 23px;
 }
 header .title {
   padding-left: 60px;

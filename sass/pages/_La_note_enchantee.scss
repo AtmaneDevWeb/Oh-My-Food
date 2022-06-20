@@ -3,8 +3,12 @@ header {
     display: flex;
     align-items: center;
     & .home_back {
-        font-size: 20px;
+        // font-size: 20px;
         margin-left: 20px;
+    }
+    & .back__icon {
+        color:#505050 ;
+        font-size: 23px;
     }
     & .title {
         padding-left: 60px;
