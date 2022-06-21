@@ -61,17 +61,6 @@ main .explore p {
   padding-bottom: 32px;
   font-size: 18px;
 }
-main .explore button {
-  width: 53%;
-  background: linear-gradient(#ff79da 10%, #9356dc 90%);
-  border-radius: 27px;
-  padding: 15px;
-  color: white;
-  font-size: 15px;
-  border: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
 
 main .steps h2 {
   margin-top: 90px;
@@ -87,6 +76,18 @@ main .steps li {
   text-align: center;
   margin-bottom: 15px;
   box-shadow: 0px 0px 6px 0px grey;
+}
+
+.explore button {
+  width: 53%;
+  background: linear-gradient(#ff79da 10%, #9356dc 90%);
+  border-radius: 27px;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 #restaurants {
@@ -185,6 +186,36 @@ main .banner img {
 .menu .menu__dishes .dish {
   background-color: white;
   border-radius: 10px;
+}
+
+#footer {
+  background-color: #302a2a;
+  color: #fff;
+  padding: 25px;
+}
+
+.footer__title {
+  font-family: "shrikhand", sans-serif;
+  font-size: 20px;
+  font-weight: inherit;
+  margin-bottom: 15px;
+}
+.footer__li {
+  list-style: none;
+  padding: 0;
+}
+.footer__li--item {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400px;
+}
+.footer__li--item a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__li--item i {
+  width: 25px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

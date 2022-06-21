@@ -1,0 +1,30 @@
+#footer {
+    background-color:#302a2a;
+    color: #fff;
+    padding: 25px;
+}
+.footer{
+    &__title {
+        font-family: "shrikhand", sans-serif;
+        font-size: 20px;
+        font-weight: inherit;
+        margin-bottom: 15px;
+        }
+    &__li {
+        list-style: none;
+        padding: 0;
+        &--item {
+            margin:10px 0;
+            font-size: 18px;
+            font-weight: 400px;
+            & a {
+                color: #fff;
+                text-decoration: none;
+            }
+            & i {
+                width: 25px;
+                font-size: 15px;
+            }
+        }
+    }
+}
