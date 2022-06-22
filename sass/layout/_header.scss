@@ -3,11 +3,13 @@ header {
     font-family: "shrikhand", cursive;
     text-align: center;
     padding: 3px;
-    position: relative;
-    @include standard-shadow;
+        @include standard-shadow;
     & h1 {
         margin: 0;
         padding-top: 4px;
         padding-bottom: 2px;
+    }
+    & .index {
+        margin-right: 100px;
     }
 }
