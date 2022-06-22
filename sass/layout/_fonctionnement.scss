@@ -1,0 +1,52 @@
+.fonction {
+    border: 2px solid green;
+    height: 400px;
+    margin-bottom: 30px;
+    & h2 {
+        height: 60px;
+        margin-left: 20px;
+    }
+    & .fontion__list {
+        display: flex;
+    }
+    & .fonction__item {
+        width: 90%;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #f2F2F2;
+        margin: 17px;
+        height: 70px;
+        
+        & .fonction__num {
+            background-color: green;
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            line-height: 27px;
+            margin-left: -7px;
+        }
+        & .fonction__icon {
+            width: 20px;
+            height: 20px;
+            font-size: 17px;
+            line-height: 20px;
+            padding: 0 9px 0 15px;
+            font-weight: bold;
+                    }
+        & .fonction__txt {
+            font-size: 19px;
+            font-weight: bold;
+        }
+    }
+    & .fonction__item:hover {
+        transition: 0.4s;
+        filter: brightness(97%);
+        color: #AF7AC5;
+        
+    }
+}

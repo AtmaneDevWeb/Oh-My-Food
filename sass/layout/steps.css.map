@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC,MAAM,CAAC,EAAE,CAAC;EACX,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CACtB",
-    "sources": [
-        "steps.scss"
-    ],
-    "names": [],
-    "file": "steps.css"
-}
