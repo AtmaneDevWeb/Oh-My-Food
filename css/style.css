@@ -14,6 +14,7 @@ body {
 }
 
 header {
+  border: 2px solid green;
   font-family: "shrikhand", cursive;
   text-align: center;
   padding: 3px;
@@ -47,6 +48,7 @@ main .city h2 {
 }
 
 main .explore {
+  border: 2px solid blue;
   text-align: center;
 }
 main .explore h2 {
@@ -117,6 +119,7 @@ main .explore p {
   background: linear-gradient(#ff79da 10%, #9356dc 90%);
   border-radius: 27px;
   cursor: pointer;
+  margin-bottom: 60px;
   padding: 15px;
   color: white;
   font-size: 15px;
@@ -131,6 +134,7 @@ main .explore p {
 }
 
 #restaurants {
+  border: 2px solid red;
   background-color: #F2F2F2;
   padding: 40px 20px;
 }
@@ -171,7 +175,6 @@ main .explore p {
   left: 67%;
 }
 #restaurants .card .card__descript {
-  height: 60px;
   display: flex;
   height: 60px;
   padding-right: 20px;
@@ -181,7 +184,7 @@ main .explore p {
   color: #000;
   position: relative;
   border: 2px solid green;
-  top: 55%;
+  top: 51%;
 }
 #restaurants .card .card__descript .card__descript__title {
   margin: 0;
@@ -237,9 +240,13 @@ main .banner img {
 }
 
 #footer {
+  margin-top: 60px;
+  border: 2px solid blue;
   background-color: #302a2a;
   color: #fff;
   padding: 25px;
+  position: relative;
+  top: 1177px;
 }
 
 .footer__title {
