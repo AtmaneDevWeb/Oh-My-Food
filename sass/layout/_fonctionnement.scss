@@ -1,6 +1,5 @@
 @import "../utils/box-shadows";
 .fonction {
-    border: 2px solid green;
     height: 400px;
     padding-top: 40px;
     & h2 {
@@ -39,7 +38,7 @@
             font-size: 17px;
             line-height: 20px;
             padding: 0 9px 0 15px;
-            color: darkgrey;
+            // color: darkgrey;
             font-weight: bold;
                     }
         & .fonction__txt {
