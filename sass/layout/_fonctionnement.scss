@@ -2,7 +2,7 @@
 .fonction {
     border: 2px solid green;
     height: 400px;
-    margin-bottom: 30px;
+    padding-top: 40px;
     & h2 {
         height: 60px;
         font-size: 25px;
@@ -16,13 +16,14 @@
         align-items: center;
         display: flex;
         cursor: pointer;
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: #f2F2F2;
-        margin: 17px;
+        margin-left: 25px;
+        margin-bottom: 25px;
         height: 70px;
         @include standard-shadow;
         & .fonction__num {
-            background-color: green;
+            background-color: #AF7AC5;
             width: 27px;
             height: 27px;
             border-radius: 50%;
@@ -30,7 +31,7 @@
             color: white;
             font-size: 15px;
             line-height: 27px;
-            margin-left: -7px;
+            margin-left: -10px;
         }
         & .fonction__icon {
             width: 20px;
@@ -38,6 +39,7 @@
             font-size: 17px;
             line-height: 20px;
             padding: 0 9px 0 15px;
+            color: darkgrey;
             font-weight: bold;
                     }
         & .fonction__txt {
