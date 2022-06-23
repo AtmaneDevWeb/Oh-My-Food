@@ -1,9 +1,11 @@
+@import "../utils/box-shadows";
 .fonction {
     border: 2px solid green;
     height: 400px;
     margin-bottom: 30px;
     & h2 {
         height: 60px;
+        font-size: 25px;
         margin-left: 20px;
     }
     & .fontion__list {
@@ -18,7 +20,7 @@
         background-color: #f2F2F2;
         margin: 17px;
         height: 70px;
-        
+        @include standard-shadow;
         & .fonction__num {
             background-color: green;
             width: 27px;
