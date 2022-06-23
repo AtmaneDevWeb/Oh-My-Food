@@ -233,6 +233,7 @@ main .banner img {
   background-color: gainsboro;
   border-radius: 60px 60px 0 0;
   margin-top: -100px;
+  padding: 0 20px;
 }
 .menu .menu__title {
   display: flex;
@@ -244,26 +245,46 @@ main .banner img {
 .menu .menu__title .empty-heart {
   font-size: 28px;
 }
-.menu .menu__dishes {
-  border: 1px solid green;
-}
 .menu .menu__dishes h3 {
   text-transform: uppercase;
-  border-bottom: #99e2d0;
+  border-bottom: 3px solid #99e2d0;
   width: 53px;
 }
 .menu .menu__dishes .dish {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.menu .menu__dishes .dish .dish__info--name {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.menu .menu__dishes .dish .dish__info--content {
+  margin: 0;
+  font-size: 18px;
+  color: grey;
+  font-weight: bold;
+}
+.menu .menu__dishes .dish__price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.menu .menu__dishes .dish__price p {
+  margin: 0;
 }
 
 #footer {
-  margin-top: 90px;
+  position: relative;
   background-color: #302a2a;
   color: #fff;
   padding: 25px;
-  position: relative;
-  top: 1177px;
+  margin-top: 1280px;
 }
 
 .footer__title {
