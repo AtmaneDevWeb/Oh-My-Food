@@ -1,4 +1,4 @@
-
+@import  "../utils/variables";
 header {
     position: relative;
     display: flex;
@@ -29,13 +29,22 @@ main .banner img {
     margin-top: -100px;
     & .menu__title {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        font-family: "shrikhand", cursive;
+        font-size: 21px;
         align-items: center;
-        padding-left: 20px;
-        padding-right: 20PX;
+        .empty-heart {
+            font-size: 28px;
+        }
+        
     }
  .menu__dishes {
     border: 1px solid green;
+    & h3 {
+        text-transform: uppercase;
+        border-bottom: $colorTertiary;
+        width: 53px;
+    }
     .dish {
         background-color: white;
         border-radius: 10px;

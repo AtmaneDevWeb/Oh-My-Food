@@ -236,13 +236,21 @@ main .banner img {
 }
 .menu .menu__title {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  font-family: "shrikhand", cursive;
+  font-size: 21px;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20PX;
+}
+.menu .menu__title .empty-heart {
+  font-size: 28px;
 }
 .menu .menu__dishes {
   border: 1px solid green;
+}
+.menu .menu__dishes h3 {
+  text-transform: uppercase;
+  border-bottom: #99e2d0;
+  width: 53px;
 }
 .menu .menu__dishes .dish {
   background-color: white;
