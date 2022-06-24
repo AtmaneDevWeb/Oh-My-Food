@@ -13,3 +13,7 @@
     font-weight: normal;
     transition-duration: 1s;
 }
+@mixin btn_hover {
+        transition: 0.4s;
+        filter: brightness(110%); 
+    }

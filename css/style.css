@@ -57,6 +57,25 @@ main .explore h2 {
   font-size: 26px;
   font-weight: bold;
 }
+main .explore__btn {
+  width: 59%;
+  height: 57px;
+  background: linear-gradient(#e991d1 10%, #9356dc 90%);
+  border-radius: 27px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  transition-duration: 1s;
+}
+main .explore__btn:hover {
+  transition: 0.4s;
+  filter: brightness(110%);
+}
 main .explore p {
   margin: 0;
   padding-top: 15px;
@@ -281,7 +300,10 @@ main .banner img {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   transition-duration: 1s;
-  margin: 0;
+}
+.menu__btn:hover {
+  transition: 0.4s;
+  filter: brightness(110%);
 }
 
 #footer {
