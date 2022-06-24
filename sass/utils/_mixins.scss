@@ -1,4 +1,4 @@
-@mixin button {
+@mixin btn {
     width: 59%;
     height: 57px;
     background: linear-gradient( #e991d1 10%, #9356dc 90%);
@@ -12,8 +12,4 @@
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     transition-duration: 1s;
-     
-}
-    .explore button:hover {
-        filter: brightness(110%)
 }

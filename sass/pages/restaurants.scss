@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 header {
     position: relative;
@@ -32,9 +33,9 @@ main .banner img {
     background-color: gainsboro;
     border-radius: 60px 60px 0 0;
     margin-top: -100px;
-    padding: 0 20px;
+    padding: 20px;
 
-    & .menu__title {
+    &__title {
         display: flex;
         justify-content: space-evenly;
         font-family: "shrikhand", cursive;
@@ -47,7 +48,7 @@ main .banner img {
 
     }
 
-    .menu__dishes {
+    &__dishes {
         & h3 {
             text-transform: uppercase;
             border-bottom: 3px solid $colorTertiary;
@@ -56,14 +57,14 @@ main .banner img {
 
         .dish {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: flex-end;
             background-color: white;
             border-radius: 20px;
             margin-bottom: 20px;
             padding: 15px;
 
-            .dish__info--name {
+            & .dish__info--name {
                 font-size: 20px;
                 font-weight: bolder;
                 margin: 0;
@@ -85,8 +86,25 @@ main .banner img {
                 margin:0;
             }
         }
+        
+
     }
+    
+    
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 70px 0;
+    }
+    &__btn {
+
+        @include btn;
+        margin: 0; 
+    
+    }
+    
 }
+
 
  
 

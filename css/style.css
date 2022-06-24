@@ -118,22 +118,6 @@ main .explore p {
   color: #AF7AC5;
 }
 
-.explore button {
-  width: 59%;
-  height: 57px;
-  background: linear-gradient(#e991d1 10%, #9356dc 90%);
-  border-radius: 27px;
-  cursor: pointer;
-  margin-bottom: 60px;
-  padding: 15px;
-  color: white;
-  font-size: 18px;
-  border: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  transition-duration: 1s;
-}
-
 .explore button:hover {
   filter: brightness(110%);
 }
@@ -233,49 +217,70 @@ main .banner img {
   background-color: gainsboro;
   border-radius: 60px 60px 0 0;
   margin-top: -100px;
-  padding: 0 20px;
+  padding: 20px;
 }
-.menu .menu__title {
+.menu__title {
   display: flex;
   justify-content: space-evenly;
   font-family: "shrikhand", cursive;
   font-size: 21px;
   align-items: center;
 }
-.menu .menu__title .empty-heart {
+.menu__title .empty-heart {
   font-size: 28px;
 }
-.menu .menu__dishes h3 {
+.menu__dishes h3 {
   text-transform: uppercase;
   border-bottom: 3px solid #99e2d0;
   width: 53px;
 }
-.menu .menu__dishes .dish {
+.menu__dishes .dish {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 20px;
   padding: 15px;
 }
-.menu .menu__dishes .dish .dish__info--name {
+.menu__dishes .dish .dish__info--name {
   font-size: 20px;
   font-weight: bolder;
   margin: 0;
   padding-bottom: 5px;
 }
-.menu .menu__dishes .dish .dish__info--content {
+.menu__dishes .dish .dish__info--content {
   margin: 0;
   font-size: 18px;
   color: grey;
   font-weight: bold;
 }
-.menu .menu__dishes .dish__price {
+.menu__dishes .dish__price {
   font-weight: bold;
   font-size: 18px;
 }
-.menu .menu__dishes .dish__price p {
+.menu__dishes .dish__price p {
+  margin: 0;
+}
+.menu__form {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 70px 0;
+}
+.menu__btn {
+  width: 59%;
+  height: 57px;
+  background: linear-gradient(#e991d1 10%, #9356dc 90%);
+  border-radius: 27px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  transition-duration: 1s;
   margin: 0;
 }
 
