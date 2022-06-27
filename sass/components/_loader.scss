@@ -1,0 +1,19 @@
+@import "../utils/variables";
+@import "../utils/keyframes";
+.loader{
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 16px solid ;
+    width: 120px;
+    height: 120px;
+    border-top-color: $colorPrimary;
+    border-right-color: $colorTertiary;
+    border-bottom-color: $colorSecondary;
+    border-left-color: white;
+    border-radius: 50%;
+    animation: chargeur 4s linear infinite;
+
+  }
+
+ 

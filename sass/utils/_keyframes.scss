@@ -1,0 +1,39 @@
+@keyframes chargeur {
+    0%{
+      transform: rotate(0deg) scale(0);
+      border-top-color: $colorPrimary;
+      border-right-color: $colorSecondary;
+      border-bottom-color: $colorTertiary;
+      border-left-color: greenyellow;
+    }
+    25%{
+        transform: rotate(0deg) scale(0.5);
+        border-left-color: $colorPrimary;
+        border-bottom-color: $colorSecondary;
+        border-right-color: $colorTertiary;
+        border-top-color: whitesmoke;
+    }
+    50% {
+       transform: rotate(360deg) scale(1);
+       border-top-color: $colorPrimary;
+       border-right-color: $colorSecondary;
+       border-bottom-color: $colorTertiary;
+       border-left-color: whitesmoke;
+    }
+    75%{
+        transform: rotate(0deg) scale(0.5);
+        border-left-color: $colorPrimary;
+        border-bottom-color: $colorSecondary;
+        border-right-color: $colorTertiary;
+        border-top-color: whitesmoke;
+    
+    }
+    100%{
+       transform: rotate(720deg) scale(0);
+       border-top-color: $colorPrimary;
+      border-right-color: $colorSecondary;
+      border-bottom-color: $colorTertiary;
+      border-left-color: whitesmoke;
+    }
+    
+  }
