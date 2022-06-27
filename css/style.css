@@ -341,56 +341,69 @@ main .banner img {
   font-size: 15px;
 }
 
-@keyframes chargeur {
+@keyframes loader {
   0% {
     transform: rotate(0deg) scale(0);
     border-top-color: #9356dc;
-    border-right-color: #FF79DA;
-    border-bottom-color: #99e2d0;
-    border-left-color: greenyellow;
+    border-right-color: #9356dc;
+    border-bottom-color: #9356dc;
+    border-left-color: #9356dc;
   }
   25% {
     transform: rotate(0deg) scale(0.5);
-    border-left-color: #9356dc;
+    border-top-color: #FF79DA;
+    border-right-color: #FF79DA;
     border-bottom-color: #FF79DA;
-    border-right-color: #99e2d0;
-    border-top-color: whitesmoke;
+    border-left-color: #FF79DA;
   }
   50% {
-    transform: rotate(360deg) scale(1);
-    border-top-color: #9356dc;
-    border-right-color: #FF79DA;
+    transform: rotate(360deg) scale(1.5);
+    border-top-color: #99e2d0;
+    border-right-color: #99e2d0;
     border-bottom-color: #99e2d0;
-    border-left-color: whitesmoke;
+    border-left-color: #99e2d0;
   }
   75% {
     transform: rotate(0deg) scale(0.5);
-    border-left-color: #9356dc;
-    border-bottom-color: #FF79DA;
-    border-right-color: #99e2d0;
-    border-top-color: whitesmoke;
+    border-top-color: #9356dc;
+    border-right-color: #FF79DA;
+    border-bottom-color: #99e2d0;
+    border-left-color: #FF79DA;
   }
   100% {
     transform: rotate(720deg) scale(0);
     border-top-color: #9356dc;
-    border-right-color: #FF79DA;
-    border-bottom-color: #99e2d0;
-    border-left-color: whitesmoke;
+    border-right-color: #9356dc;
+    border-bottom-color: #9356dc;
+    border-left-color: #9356dc;
   }
 }
-.loader {
+@keyframes vanish {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.laoder {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(243, 241, 240);
+  animation: vanish 3s;
+}
+
+.loader_anim {
+  position: fixed;
+  inset: 0;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  border: 16px solid;
+  border: 10px solid;
   width: 120px;
   height: 120px;
-  border-top-color: #9356dc;
-  border-right-color: #99e2d0;
-  border-bottom-color: #FF79DA;
-  border-left-color: white;
   border-radius: 50%;
-  animation: chargeur 4s linear infinite;
+  animation: loader 4s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

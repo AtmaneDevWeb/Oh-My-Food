@@ -1,39 +1,48 @@
-@keyframes chargeur {
+@keyframes loader {
     0%{
       transform: rotate(0deg) scale(0);
       border-top-color: $colorPrimary;
-      border-right-color: $colorSecondary;
-      border-bottom-color: $colorTertiary;
-      border-left-color: greenyellow;
+      border-right-color: $colorPrimary;
+      border-bottom-color: $colorPrimary;
+        border-left-color: $colorPrimary;
     }
     25%{
         transform: rotate(0deg) scale(0.5);
-        border-left-color: $colorPrimary;
+        border-top-color: $colorSecondary;
+        border-right-color: $colorSecondary;
         border-bottom-color: $colorSecondary;
-        border-right-color: $colorTertiary;
-        border-top-color: whitesmoke;
+        border-left-color: $colorSecondary;
     }
     50% {
-       transform: rotate(360deg) scale(1);
-       border-top-color: $colorPrimary;
-       border-right-color: $colorSecondary;
-       border-bottom-color: $colorTertiary;
-       border-left-color: whitesmoke;
+       transform: rotate(360deg) scale(1.5);
+       border-top-color: $colorTertiary;
+      border-right-color: $colorTertiary;
+      border-bottom-color: $colorTertiary;
+      border-left-color: $colorTertiary;
     }
     75%{
         transform: rotate(0deg) scale(0.5);
-        border-left-color: $colorPrimary;
-        border-bottom-color: $colorSecondary;
-        border-right-color: $colorTertiary;
-        border-top-color: whitesmoke;
+        border-top-color: $colorPrimary;
+      border-right-color: $colorSecondary;
+      border-bottom-color: $colorTertiary;
+      border-left-color: $colorSecondary;
     
     }
     100%{
        transform: rotate(720deg) scale(0);
        border-top-color: $colorPrimary;
-      border-right-color: $colorSecondary;
-      border-bottom-color: $colorTertiary;
-      border-left-color: whitesmoke;
+      border-right-color: $colorPrimary;
+      border-bottom-color: $colorPrimary;
+      border-left-color: $colorPrimary;
     }
     
+  }
+
+  @keyframes vanish {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
   }
