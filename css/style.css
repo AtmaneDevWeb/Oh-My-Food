@@ -1,49 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-*,
-::before ::after {
+*, *:before, *:after {
   box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
 }
 
 body {
-  max-width: 767px;
-  min-width: 320px;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.loader_anim {
+  position: fixed;
+  inset: 0;
   margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 10px solid;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: loader 4s linear infinite;
 }
 
 header {
   font-family: "shrikhand", cursive;
-  text-align: center;
-  padding: 3px;
-  box-shadow: 1px 1px 6px grey;
-}
-header h1 {
+  justify-content: center;
+  font-size: 33px;
   margin: 0;
-  padding-top: 4px;
-  padding-bottom: 2px;
-}
-header .index {
-  margin-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  box-shadow: 1px 1px 6px grey;
 }
 
 main .city {
   display: flex;
+  padding-left: 100px;
   align-items: center;
   justify-content: center;
-  background-color: #efefef;
+  background-color: #EAEAEA;
   gap: 17px;
 }
 main .city i {
   font-size: 20px;
 }
-main .city h2 {
+main .city .search__city {
   margin: 0;
   padding-top: 15px;
   padding-bottom: 14px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+  border: none;
+  background-color: #EAEAEA;
 }
 
 main .explore {
@@ -139,6 +184,41 @@ main .explore p {
 
 .explore button:hover {
   filter: brightness(110%);
+}
+
+#footer {
+  position: relative;
+  background-color: #302a2a;
+  color: #fff;
+  padding: 25px;
+  margin-top: 1280px;
+}
+
+.footer__title {
+  font-family: "shrikhand", sans-serif;
+  font-size: 20px;
+  font-weight: inherit;
+  margin-bottom: 15px;
+}
+.footer__li {
+  list-style: none;
+  padding: 0;
+}
+.footer__li--item {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer__li--item a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__li--item a:hover {
+  color: #AF7AC5;
+}
+.footer__li--item i {
+  width: 25px;
+  font-size: 15px;
 }
 
 #restaurants {
@@ -306,41 +386,6 @@ main .banner img {
   filter: brightness(110%);
 }
 
-#footer {
-  position: relative;
-  background-color: #302a2a;
-  color: #fff;
-  padding: 25px;
-  margin-top: 1280px;
-}
-
-.footer__title {
-  font-family: "shrikhand", sans-serif;
-  font-size: 20px;
-  font-weight: inherit;
-  margin-bottom: 15px;
-}
-.footer__li {
-  list-style: none;
-  padding: 0;
-}
-.footer__li--item {
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: 400px;
-}
-.footer__li--item a {
-  color: #fff;
-  text-decoration: none;
-}
-.footer__li--item a:hover {
-  color: #AF7AC5;
-}
-.footer__li--item i {
-  width: 25px;
-  font-size: 15px;
-}
-
 @keyframes loader {
   0% {
     transform: rotate(0deg) scale(0);
@@ -385,25 +430,6 @@ main .banner img {
   100% {
     transform: scale(0);
   }
-}
-.laoder {
-  position: fixed;
-  inset: 0;
-  background-color: rgb(243, 241, 240);
-  animation: vanish 3s;
-}
-
-.loader_anim {
-  position: fixed;
-  inset: 0;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  border: 10px solid;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  animation: loader 4s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

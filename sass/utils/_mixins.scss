@@ -1,7 +1,7 @@
 @mixin btn {
     width: 59%;
     height: 57px;
-    background: linear-gradient( #e991d1 10%, #9356dc 90%);
+    background: linear-gradient(#e991d1 10%, #9356dc 90%);
     border-radius: 27px;
     cursor: pointer;
     margin-bottom: 60px;
@@ -13,7 +13,12 @@
     font-weight: normal;
     transition-duration: 1s;
 }
+
 @mixin btn_hover {
-        transition: 0.4s;
-        filter: brightness(110%); 
-    }
+    transition: 0.4s;
+    filter: brightness(110%);
+}
+
+@mixin standard-shadow {
+    box-shadow: 1px 1px 6px grey;
+}

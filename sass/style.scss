@@ -1,16 +1,18 @@
 
-@use "./base/base";
-@use "./layout/header";
-@use "./layout/discover";
-@use "./layout/fonctionnement";
-@use "./utils/variables";
-@use "./components/button";
-@use "./components/cards";
-@use "./pages/restaurants";
-@use "./layout/footer";
-@use "./utils/_mixins.scss";
-@use "./components/loader"
-
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import "./base/reset.scss";
+@import"./utils/variables";
+@import "./utils/_mixins.scss";
+@import "./components/loader";
+@import "./layouts/header";
+@import "./layouts/discover";
+@import "./layouts/fonctionnement";
+@import "./components/button";
+@import "./layouts/footer";
+@import "./components/cards";
+@import "./pages/restaurants";
+@import "./utils/keyframes";
 
 
 

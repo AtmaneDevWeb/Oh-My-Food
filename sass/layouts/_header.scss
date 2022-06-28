@@ -1,0 +1,10 @@
+header {
+    font-family: "shrikhand", cursive;
+    justify-content: center;
+    font-size: 33px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    @include standard-shadow;
+    
+}

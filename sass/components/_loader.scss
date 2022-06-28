@@ -1,15 +1,6 @@
-@import "../utils/variables";
-@import "../utils/keyframes";
-.laoder {
-    position: fixed;
-    inset: 0;
-    background-color: rgb(243, 241, 240);
-    animation: vanish 3s;
-}
 .loader_anim{
     position: fixed;
     inset: 0;
-   
     margin:auto;
     margin-top: 100px;
     margin-bottom: 100px;

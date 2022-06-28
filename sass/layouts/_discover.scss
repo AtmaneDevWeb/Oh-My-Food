@@ -1,19 +1,21 @@
-@import "../utils/mixins";
 main .city {
     display: flex;
+    padding-left: 100px;
     align-items: center;
     justify-content: center;
-    background-color: #efefef;
+    background-color: #EAEAEA;
     gap: 17px;
     & i {
         font-size: 20px;
     }
-    & h2 {
+    & .search__city {
         margin: 0;
         padding-top: 15px;
         padding-bottom: 14px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
+        border: none;
+        background-color: #EAEAEA;
     }
 }
 main .explore {
