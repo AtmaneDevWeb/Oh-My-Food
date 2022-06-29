@@ -1,15 +1,30 @@
-.loader_anim{
+.loader {
+  width: 100%;
+    height: 100%;
+    background: #F0F0F0;
     position: fixed;
     inset: 0;
-    margin:auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: 10px solid ;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    animation: loader 4s linear infinite;
+    opacity: 0.95;
+    z-index: 1000;
+   
+    animation: vanish 0.5s  3s forwards ;
     
-  }
+}
+.loader_anim{
+  position: fixed;
+  inset: 0;
+  margin:auto;
+  margin-top: 40%;
+  border: 10px solid ;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: loader 5s linear;
+  animation-fill-mode: forwards;
+  
+}  
+
+
+  
 
  
