@@ -35,6 +35,7 @@ main .explore {
     }
     &__btn:hover {
         @include btn_hover;
+        @include standard-shadow;
     }
     & p {
         margin: 0;

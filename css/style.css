@@ -67,7 +67,7 @@ header {
   margin: 0;
   padding-top: 20px;
   padding-bottom: 15px;
-  box-shadow: 1px 1px 6px grey;
+  box-shadow: 7px 9px 13px 0px grey;
 }
 
 main .city {
@@ -120,6 +120,7 @@ main .explore__btn {
 main .explore__btn:hover {
   transition: 0.4s;
   filter: brightness(110%);
+  box-shadow: 7px 9px 13px 0px grey;
 }
 main .explore p {
   margin: 0;
@@ -151,7 +152,7 @@ main .explore p {
   margin-left: 25px;
   margin-bottom: 25px;
   height: 70px;
-  box-shadow: 1px 1px 6px grey;
+  box-shadow: 7px 9px 13px 0px grey;
 }
 .fonction .fonction__item .fonction__num {
   background-color: #AF7AC5;
@@ -330,7 +331,9 @@ main .banner img {
 }
 .menu__dishes h3 {
   text-transform: uppercase;
-  border-bottom: 3px solid #99e2d0;
+}
+.menu__dishes h3.menu__dishes--title::after {
+  border-bottom: 3px solid green;
   width: 53px;
 }
 .menu__dishes .dish {
@@ -384,6 +387,7 @@ main .banner img {
 .menu__btn:hover {
   transition: 0.4s;
   filter: brightness(110%);
+  box-shadow: 7px 9px 13px 0px grey;
 }
 
 @keyframes loader {

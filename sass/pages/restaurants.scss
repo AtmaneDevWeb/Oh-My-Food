@@ -38,9 +38,13 @@ main .banner img {
         }
     }
     &__dishes {
+        
         & h3 {
             text-transform: uppercase;
-            border-bottom: 3px solid $colorTertiary;
+            
+        }
+        h3.menu__dishes--title::after {
+            border-bottom: 3px solid green;
             width: 53px;
         }
         .dish {
@@ -84,5 +88,6 @@ main .banner img {
     }
     &__btn:hover {
         @include btn_hover;
+        @include standard-shadow;
     }
 }
