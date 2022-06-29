@@ -6,21 +6,22 @@
     inset: 0;
     opacity: 0.95;
     z-index: 1000;
-   
-    animation: vanish 0.5s  3s forwards ;
+    animation: vanish 1s 4s forwards ;
+    transform-origin: top ;
     
 }
 .loader_anim{
   position: fixed;
   inset: 0;
   margin:auto;
-  margin-top: 40%;
+  margin-top: 60%;
   border: 10px solid ;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  animation: loader 5s linear;
-  animation-fill-mode: forwards;
+  animation: loader 8s linear;
+  
+ animation-fill-mode: forwards;
   
 }  
 
