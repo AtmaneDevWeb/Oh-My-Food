@@ -182,12 +182,13 @@ main .explore p {
   height: 20px;
   font-size: 17px;
   line-height: 20px;
-  padding: 0 9px 0 15px;
+  padding-left: 10px;
   font-weight: bold;
 }
 .fonction .fonction__item .fonction__txt {
   font-size: 19px;
   font-weight: bold;
+  padding-left: 15px;
 }
 .fonction .fonction__item:hover {
   transition: 0.4s;
@@ -248,8 +249,6 @@ main .explore p {
   margin-bottom: 20px;
   border-radius: 15px;
   background-color: white;
-  width: 100%;
-  height: 260px;
 }
 #restaurants .card a {
   text-decoration: none;
@@ -259,7 +258,6 @@ main .explore p {
   position: relative;
 }
 #restaurants .card .card__image img {
-  position: absolute;
   width: 100%;
   height: 200px;
   border-radius: 15px 15px 0 0;
@@ -284,14 +282,12 @@ main .explore p {
   justify-content: space-between;
   align-items: center;
   color: #000;
-  position: relative;
-  top: 51%;
 }
 #restaurants .card .card__descript .card__descript__title {
   margin: 0;
   padding-top: 20px;
-  font-size: 22px;
-  margin-bottom: -20px;
+  font-size: 21px;
+  font-weight: bold;
 }
 #restaurants .card .card__descript .card__descript__place {
   font-size: 20px;
@@ -313,7 +309,7 @@ header .home_back {
 }
 header .back__icon {
   color: #505050;
-  font-size: 23px;
+  font-size: 22px;
 }
 header .title {
   padding-left: 60px;
