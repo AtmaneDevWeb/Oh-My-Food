@@ -68,7 +68,7 @@ input {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  animation: loader 8s linear;
+  animation: loader 4s linear;
   animation-fill-mode: forwards;
 }
 
@@ -190,7 +190,7 @@ main .explore p {
   font-weight: bold;
   padding-left: 15px;
 }
-.fonction .fonction__item:hover {
+.fonction .fonction__item:hover .fonction__icon {
   transition: 0.4s;
   filter: brightness(97%);
   color: #AF7AC5;
@@ -201,11 +201,9 @@ main .explore p {
 }
 
 #footer {
-  position: relative;
   background-color: #302a2a;
   color: #fff;
   padding: 25px;
-  margin-top: 1280px;
 }
 
 .footer__title {
@@ -277,7 +275,6 @@ main .explore p {
 }
 #restaurants .card .card__descript {
   display: flex;
-  height: 60px;
   padding-right: 20px;
   padding-left: 20px;
   justify-content: space-between;
@@ -346,13 +343,17 @@ main .banner img {
   width: 53px;
 }
 .menu__dishes .dish {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 20px;
-  padding: 15px;
+}
+.menu__dishes .dish .dish__info {
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 .menu__dishes .dish .dish__info--name {
   font-size: 20px;
@@ -369,9 +370,24 @@ main .banner img {
 .menu__dishes .dish__price {
   font-weight: bold;
   font-size: 18px;
+  position: absolute;
+  top: 40px;
+  right: 76px;
 }
 .menu__dishes .dish__price p {
   margin: 0;
+}
+.menu__dishes .dish__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  width: 70px;
+  height: 70px;
+  background-color: #99E2D0;
+}
+.menu__dishes .dish__check i {
+  color: white;
 }
 .menu__form {
   display: flex;

@@ -48,13 +48,17 @@ main .banner img {
             width: 53px;
         }
         .dish {
+            position: relative;
+            & .dish__info {
+                padding-left: 10px;
+                padding-bottom: 15px;
+            }
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             background-color: white;
             border-radius: 20px;
             margin-bottom: 20px;
-            padding: 15px;
             & .dish__info--name {
                 font-size: 20px;
                 font-weight: bolder;
@@ -71,8 +75,23 @@ main .banner img {
         & .dish__price {
             font-weight: bold;
             font-size: 18px;
+            position: absolute;
+            top: 40px;
+            right: 76px;
             p {
                 margin: 0;
+            }
+        }
+        & .dish__check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 15px 15px 0;
+            width: 70px;
+            height: 70px;
+            background-color: #99E2D0;
+            & i {
+                color: white;
             }
         }
     }

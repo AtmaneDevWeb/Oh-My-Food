@@ -45,7 +45,7 @@
             padding-left: 15px;
         }
     }
-    & .fonction__item:hover {
+    & .fonction__item:hover .fonction__icon {
         transition: 0.4s;
         filter: brightness(97%);
         color: #AF7AC5;
