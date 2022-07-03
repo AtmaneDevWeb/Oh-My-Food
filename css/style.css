@@ -249,6 +249,7 @@ main .explore p {
   margin-bottom: 20px;
   border-radius: 15px;
   background-color: white;
+  padding-bottom: 20px;
 }
 #restaurants .card a {
   text-decoration: none;
