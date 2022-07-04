@@ -41,12 +41,14 @@ main .banner img {
         
         & h3 {
             text-transform: uppercase;
-            
-        }
-        h3.menu__dishes--title::after {
-            border-bottom: 3px solid green;
-            width: 53px;
-        }
+            }
+            & .menu__dishes--title {
+                display: block;
+                border-bottom: 3px solid $colorTertiary;
+                width: 42px;
+                margin-bottom: 10px;
+            }
+                
         .dish {
             position: relative;
             & .dish__info {
@@ -59,6 +61,7 @@ main .banner img {
             background-color: white;
             border-radius: 20px;
             margin-bottom: 20px;
+            
             & .dish__info--name {
                 font-size: 20px;
                 font-weight: bolder;
@@ -89,11 +92,17 @@ main .banner img {
             border-radius: 0 15px 15px 0;
             width: 70px;
             height: 70px;
-            background-color: #99E2D0;
+            background-color: $colorTertiary;
             & i {
                 color: white;
             }
+           
+                     
         }
+        cursor: pointer;
+       
+       
+        
     }
     &__form {
         display: flex;

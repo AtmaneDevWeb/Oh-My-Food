@@ -139,7 +139,8 @@ main .explore p {
   padding-top: 15px;
   padding-bottom: 32px;
   color: #a39f9f;
-  font-size: 22px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .fonction {
@@ -335,12 +336,17 @@ main .banner img {
 .menu__title .empty-heart {
   font-size: 28px;
 }
+.menu__dishes {
+  cursor: pointer;
+}
 .menu__dishes h3 {
   text-transform: uppercase;
 }
-.menu__dishes h3.menu__dishes--title::after {
-  border-bottom: 3px solid green;
-  width: 53px;
+.menu__dishes .menu__dishes--title {
+  display: block;
+  border-bottom: 3px solid #99e2d0;
+  width: 42px;
+  margin-bottom: 10px;
 }
 .menu__dishes .dish {
   position: relative;
@@ -384,7 +390,7 @@ main .banner img {
   border-radius: 0 15px 15px 0;
   width: 70px;
   height: 70px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 .menu__dishes .dish__check i {
   color: white;
