@@ -9,6 +9,7 @@ main .city {
         font-size: 20px;
     }
     & .search__city {
+        outline: 0 !important;
         margin: 0;
         padding-top: 15px;
         padding-bottom: 14px;
@@ -43,7 +44,6 @@ main .explore {
         padding-bottom: 32px;
         color: #a39f9f;
         font-size: 20px;
-        font-family:"Roboto", sans-serif;
     }
     
 } 

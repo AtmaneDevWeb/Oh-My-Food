@@ -29,10 +29,8 @@ main .banner img {
     &__title {
         display: flex;
         justify-content: space-evenly;
-        font-family: "shrikhand", cursive;
         font-size: 21px;
         align-items: center;
-
         .empty-heart {
             font-size: 28px;
         }
@@ -41,14 +39,9 @@ main .banner img {
         
         & h3 {
             text-transform: uppercase;
-            }
-            & .menu__dishes--title {
-                display: block;
-                border-bottom: 3px solid $colorTertiary;
-                width: 42px;
-                margin-bottom: 10px;
-            }
-                
+           
+        }
+            
         .dish {
             position: relative;
             & .dish__info {
@@ -70,9 +63,7 @@ main .banner img {
             }
             & .dish__info--content {
                 margin: 0;
-                font-size: 18px;
-                color: grey;
-                font-weight: bold;
+                font-size: 15px;
             }
         }
         & .dish__price {

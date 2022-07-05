@@ -1,6 +1,4 @@
 .fonction {
-    height: 400px;
-    padding-top: 40px;
     & h2 {
         height: 60px;
         font-size: 25px;
@@ -21,7 +19,8 @@
         height: 70px;
         @include standard-shadow;
         & .fonction__num {
-            background-color: #AF7AC5;
+            background-color: $colorPrimary;
+            ;
             width: 27px;
             height: 27px;
             border-radius: 50%;
@@ -48,6 +47,7 @@
     & .fonction__item:hover .fonction__icon {
         transition: 0.4s;
         filter: brightness(97%);
-        color: #AF7AC5;
+        color: $colorPrimary;
+        ;
     }
 }
