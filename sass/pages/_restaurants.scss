@@ -39,9 +39,13 @@ main .banner img {
         
         & h3 {
             text-transform: uppercase;
-           
+            & .menu__dishes h3::after {
+                display: block;
+                border-bottom: 3px solid green;
+            }
         }
-            
+        
+         
         .dish {
             position: relative;
             & .dish__info {
