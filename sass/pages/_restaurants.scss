@@ -39,8 +39,7 @@ main .banner img {
             & h3 {
             text-transform: uppercase;
         }
-        
-         
+       
         .dish {
             
             position: relative;
@@ -65,6 +64,20 @@ main .banner img {
                 margin: 0;
                 font-size: 15px;
             }
+            animation: menu_appear 1800ms normal backwards ;
+        
+            &:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+        
+            &:nth-child(3) {
+                animation-delay: 0.4s;
+            }
+        
+            &:nth-child(4) {
+                animation-delay: 0.6s;
+            }
+             
         }
         & .dish__price {
             font-weight: bold;

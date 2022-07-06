@@ -8,7 +8,7 @@
         border-left-color: $colorPrimary;
     }
     25%{
-        transform: rotate(0deg) scale(0.5);
+        transform: rotate(180deg) scale(0.5);
         border-top-color: $colorSecondary;
         border-right-color: $colorSecondary;
         border-bottom-color: $colorSecondary;
@@ -22,7 +22,7 @@
       border-left-color: $colorTertiary;
     }
     75%{
-        transform: rotate(0deg) scale(0.5);
+        transform: rotate(5000deg) scale(0.5);
         border-top-color: $colorPrimary;
       border-right-color: $colorSecondary;
       border-bottom-color: $colorTertiary;
@@ -74,21 +74,22 @@
     }
     100% {
       opacity: 0;
+     z-index: -1;
       
     }
   }
-// @keyframes menu {
-//   from {
-//     -webkit-transform: translateY(10px);  
-//     transform: translateY(10px);
-//     opacity: 0;
-// }
-// 50% {
-//     opacity: 0.5;
-// }
-// to {
-//     -webkit-transform: translateY(10px);
-//     transform: translateY(0px);
-//     opacity: 1;
-// }
-// }
+  @keyframes menu_appear {
+    from {
+      -webkit-transform: translateY(10px);  
+      transform: translateY(10px);
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  to {
+      -webkit-transform: translateY(10px);
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}

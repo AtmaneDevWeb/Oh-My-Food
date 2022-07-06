@@ -70,7 +70,6 @@ main .explore {
         @include standard-shadow;
         & .fonction__num {
             background-color: $colorPrimary;
-            ;
             width: 27px;
             height: 27px;
             border-radius: 50%;
@@ -102,28 +101,26 @@ main .explore {
     }
 }
 .loader {
-    width: 100%;
+      width: 100%;
       height: 100%;
       background: #F0F0F0;
       position: fixed;
       inset: 0;
       opacity: 0.95;
       z-index: 1000;
-      animation: vanish 1s 3s both ;
-    //   transform-origin: top ;
-      
+      animation: vanish 1s 3s forwards;
+    
   }
   .loader_anim{
     position: fixed;
     inset: 0;
     margin:auto;
-    margin-top: 60%;
+    margin-top: 400px;
     border: 10px solid ;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    animation: loader 3s linear;
-    
-   animation-fill-mode: both;
+    animation: loader 3s forwards ;
+    animation-fill-mode: forwards;
     
   }  

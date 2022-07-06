@@ -68,7 +68,7 @@ p, h2, h3, input, li {
     border-left-color: #9356dc;
   }
   25% {
-    transform: rotate(0deg) scale(0.5);
+    transform: rotate(180deg) scale(0.5);
     border-top-color: #FF79DA;
     border-right-color: #FF79DA;
     border-bottom-color: #FF79DA;
@@ -82,7 +82,7 @@ p, h2, h3, input, li {
     border-left-color: #99e2d0;
   }
   75% {
-    transform: rotate(0deg) scale(0.5);
+    transform: rotate(5000deg) scale(0.5);
     border-top-color: #9356dc;
     border-right-color: #FF79DA;
     border-bottom-color: #99e2d0;
@@ -123,6 +123,22 @@ p, h2, h3, input, li {
   }
   100% {
     opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes menu_appear {
+  from {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateY(10px);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 main .city {
@@ -244,20 +260,20 @@ main .explore p {
   inset: 0;
   opacity: 0.95;
   z-index: 1000;
-  animation: vanish 1s 3s both;
+  animation: vanish 1s 3s forwards;
 }
 
 .loader_anim {
   position: fixed;
   inset: 0;
   margin: auto;
-  margin-top: 60%;
+  margin-top: 400px;
   border: 10px solid;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  animation: loader 3s linear;
-  animation-fill-mode: both;
+  animation: loader 3s forwards;
+  animation-fill-mode: forwards;
 }
 
 header {
@@ -421,6 +437,7 @@ main .banner img {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 20px;
+  animation: menu_appear 1800ms normal backwards;
 }
 .menu__dishes .dish .dish__info {
   padding-left: 10px;
@@ -435,6 +452,15 @@ main .banner img {
 .menu__dishes .dish .dish__info--content {
   margin: 0;
   font-size: 15px;
+}
+.menu__dishes .dish:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu__dishes .dish:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.menu__dishes .dish:nth-child(4) {
+  animation-delay: 0.6s;
 }
 .menu__dishes .dish__price {
   font-weight: bold;
