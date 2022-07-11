@@ -51,7 +51,8 @@ main .explore {
 .fonction {
     & h2 {
         height: 60px;
-        font-size: 25px;
+        font-size: 23px;
+        font-weight: 700;
         padding-top: 40px;
         padding-bottom: 66px;
         margin-left: 20px;
@@ -78,6 +79,7 @@ main .explore {
         margin-bottom: 25px;
         height: 70px;
         @include standard-shadow;
+        
         & .fonction__num {
             background-color: $colorPrimary;
             width: 27px;
@@ -94,14 +96,18 @@ main .explore {
             height: 20px;
             font-size: 17px;
             line-height: 20px;
-            padding-left:10px;
+            padding-left: 25px;
+            padding-right: 25px;
             font-weight: bold;
                     }
         & .fonction__txt {
-            font-size: 19px;
-            font-weight: bold;
+            font-size: 17px;
+            font-weight: 500;
             padding-left: 15px;
         }
+    }
+    & .fonction__item:hover {
+        background-color:#f5e8f1;
     }
     & .fonction__item:hover .fonction__icon {
         transition: 0.4s;

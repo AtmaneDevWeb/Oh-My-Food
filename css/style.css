@@ -205,7 +205,8 @@ main .explore p {
 
 .fonction h2 {
   height: 60px;
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 700;
   padding-top: 40px;
   padding-bottom: 66px;
   margin-left: 20px;
@@ -248,13 +249,17 @@ main .explore p {
   height: 20px;
   font-size: 17px;
   line-height: 20px;
-  padding-left: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-weight: bold;
 }
 .fonction .fonction__item .fonction__txt {
-  font-size: 19px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: 500;
   padding-left: 15px;
+}
+.fonction .fonction__item:hover {
+  background-color: #f5e8f1;
 }
 .fonction .fonction__item:hover .fonction__icon {
   transition: 0.4s;
