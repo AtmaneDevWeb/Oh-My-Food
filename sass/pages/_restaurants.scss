@@ -36,10 +36,13 @@ main .banner img {
         }
     }
     &__dishes {
+        
             & h3 {
             text-transform: uppercase;
+            margin-bottom: 20px;
+          
         }
-       
+        
         .dish {
             
             position: relative;

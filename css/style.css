@@ -428,6 +428,7 @@ main .banner img {
 }
 .menu__dishes h3 {
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .menu__dishes .dish {
   position: relative;
