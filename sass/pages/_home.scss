@@ -32,7 +32,7 @@ main .explore {
     &__btn {
         
         @include btn;
-        
+        margin-bottom: 40px;
     }
     &__btn:hover {
         @include btn_hover;
@@ -52,7 +52,17 @@ main .explore {
     & h2 {
         height: 60px;
         font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 66px;
         margin-left: 20px;
+        
+    }
+    & h2.restaurants__title {
+        margin: 0px;
+        padding-bottom: 0px;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 24px;
     }
     & .fontion__list {
         display: flex;
