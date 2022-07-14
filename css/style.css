@@ -45,6 +45,9 @@ input {
   border-radius: 0;
 }
 
+/* Colors */
+/* Fonts*/
+/* Media Queries */
 h1 {
   font-family: "shrikhand", cursive, sans-serif;
 }
@@ -295,7 +298,7 @@ header {
   margin: 0;
   padding-top: 20px;
   padding-bottom: 15px;
-  box-shadow: 7px 9px 13px 0px grey;
+  box-shadow: -1px -3px 13px 0px grey;
 }
 
 .explore button:hover {
@@ -527,6 +530,82 @@ main .banner img {
   transition: 0.4s;
   filter: brightness(110%);
   box-shadow: 7px 9px 13px 0px grey;
+}
+
+/* Format tablette */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .explore__btn {
+    width: 230px;
+  }
+  .fonction__list {
+    display: flex;
+    padding-right: 20px;
+  }
+  .restaurants__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #restaurants .card .card__image img {
+    width: 450px;
+    height: 200px;
+  }
+  #footer {
+    text-align: center;
+  }
+  .footer__title {
+    font-size: 30px;
+  }
+}
+/* Format desktop */
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 50px;
+    letter-spacing: 5px;
+    justify-content: left;
+    padding-left: 20px;
+  }
+  main .city i {
+    font-size: 30px;
+  }
+  main .city .search__city {
+    font-size: 25px;
+  }
+  main .explore br {
+    display: none;
+  }
+  main .explore h2 {
+    padding-bottom: 25px;
+  }
+  form.explore__form {
+    padding-top: 20px;
+  }
+  main .explore__btn {
+    width: 400px;
+  }
+  .fonction__list {
+    display: flex;
+    padding-right: 20px;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 110px;
+  }
+  .restaurants__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #restaurants .card .card__image img {
+    width: 300px;
+    height: 200px;
+  }
+  #footer {
+    text-align: center;
+  }
+  .footer__title {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

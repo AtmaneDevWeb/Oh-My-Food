@@ -1,0 +1,92 @@
+/* Format tablette */
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-max) {
+
+main .explore__btn {
+    width: 230px;
+}
+
+.fonction__list {
+    display: flex;
+    padding-right: 20px;
+}
+
+.restaurants__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#restaurants .card .card__image img {
+    width: 450px;
+    height: 200px;
+}
+
+#footer {
+    text-align: center;
+}
+.footer__title {
+    font-size: 30px;
+}
+}
+
+/* Format desktop */
+
+@media screen and (min-width: $breakpoint-desktop) {
+	header {
+        font-size: 50px;
+        letter-spacing: 5px;
+        justify-content: left;
+        padding-left: 20px;
+    }
+
+    main .city i {
+        font-size: 30px;
+        }
+        main .city .search__city {
+            font-size: 25px;
+        }  
+        main .explore br {
+            display: none;
+           
+        }
+        main .explore h2 {
+            padding-bottom: 25px;
+        }
+        form.explore__form {
+            padding-top: 20px
+        ;
+        }
+        main .explore__btn {
+            width: 400px;
+    }
+    .fonction__list {
+        display: flex;
+        padding-right: 20px;
+        display: flex;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 110px;
+    }
+
+    .restaurants__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+
+    #restaurants .card .card__image img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    .footer__title {
+        font-size: 30px;
+    }
+    }
