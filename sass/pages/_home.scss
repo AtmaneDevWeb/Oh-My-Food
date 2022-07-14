@@ -7,6 +7,7 @@ main .city {
     gap: 17px;
     & i {
         font-size: 20px;
+        color: #353535;
     }
     & .search__city {
         outline: 0 !important;
@@ -16,6 +17,7 @@ main .city {
         font-size: 18px;
         font-weight: bold;
         border: none;
+        color: #353535;
         background-color: #EAEAEA;
     }
 }

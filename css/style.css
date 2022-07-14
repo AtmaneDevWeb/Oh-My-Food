@@ -152,6 +152,7 @@ main .city {
 }
 main .city i {
   font-size: 20px;
+  color: #353535;
 }
 main .city .search__city {
   outline: 0 !important;
@@ -161,6 +162,7 @@ main .city .search__city {
   font-size: 18px;
   font-weight: bold;
   border: none;
+  color: #353535;
   background-color: #EAEAEA;
 }
 
