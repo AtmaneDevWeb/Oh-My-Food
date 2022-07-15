@@ -191,6 +191,9 @@ main .explore__btn {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   transition-duration: 1s;
+  width: 54%;
+  height: 50px;
+  font-size: 17px;
   margin-bottom: 40px;
 }
 main .explore__btn:hover {
@@ -202,8 +205,10 @@ main .explore p {
   margin: 0;
   padding-top: 15px;
   padding-bottom: 32px;
-  color: #a39f9f;
-  font-size: 20px;
+  color: black;
+  font-size: 19px;
+  font-weight: lighter;
+  font-family: "roboto", sans-serif;
 }
 
 .fonction h2 {
@@ -294,7 +299,7 @@ main .explore p {
   animation-fill-mode: forwards;
 }
 
-header {
+.index_resto {
   justify-content: center;
   font-size: 33px;
   margin: 0;
@@ -366,10 +371,10 @@ header {
 }
 #restaurants .card .card__image__textcover {
   position: absolute;
-  padding: 10px 20px;
-  border-radius: 3px;
+  padding: 7px 10px;
+  border-radius: 2px;
   background-color: #99E2D0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: #008766;
   top: 15px;
@@ -403,9 +408,10 @@ header {
 }
 
 header {
-  position: relative;
+  font-size: 33px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   display: flex;
-  align-items: center;
 }
 header .home_back {
   margin-left: 20px;
