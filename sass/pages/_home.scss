@@ -1,12 +1,12 @@
 main .city {
     display: flex;
-    padding-left: 100px;
+    padding-left: 20px;
     align-items: center;
     justify-content: center;
     background-color: #EAEAEA;
     gap: 17px;
     & i {
-        font-size: 20px;
+        font-size: 16px;
         color: #353535;
     }
     & .search__city {
@@ -14,7 +14,7 @@ main .city {
         margin: 0;
         padding-top: 15px;
         padding-bottom: 14px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         border: none;
         color: #353535;
@@ -109,13 +109,16 @@ main .explore {
             font-weight: bold;
                     }
         & .fonction__txt {
-            font-size: 17px;
+            font-size: 16px;
+            font-family: $font-fam-text;
             font-weight: 500;
             padding-left: 15px;
+            color:black
         }
     }
     & .fonction__item:hover {
-        background-color:#f5e8f1;
+        background-color:#efe6fb;
+        
     }
     & .fonction__item:hover .fonction__icon {
         transition: 0.4s;
