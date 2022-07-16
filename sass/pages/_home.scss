@@ -117,14 +117,15 @@ main .explore {
         }
     }
     & .fonction__item:hover {
+        transition: 1.5s;
         background-color:#efe6fb;
         
     }
     & .fonction__item:hover .fonction__icon {
-        transition: 0.4s;
+        transition: 1.5s;
         filter: brightness(97%);
         color: $colorPrimary;
-        ;
+        
     }
 }
 .loader {
@@ -135,7 +136,7 @@ main .explore {
       inset: 0;
       opacity: 0.95;
       z-index: 1000;
-      animation: vanish 1s 3s forwards;
+      animation: vanish 1s 2s forwards;
     
   }
   .loader_anim{
