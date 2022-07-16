@@ -78,6 +78,7 @@
       
     }
   }
+
   @keyframes menu_appear {
     from {
       -webkit-transform: translateY(10px);  
@@ -91,5 +92,14 @@
       -webkit-transform: translateY(10px);
       transform: translateY(0px);
       opacity: 1;
+  }
+}
+
+@keyframes check_rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
