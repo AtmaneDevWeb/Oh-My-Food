@@ -69,8 +69,10 @@ main .banner img {
             }       
             
             & .dish__info {
-                 padding-left: 10px;
+                padding-left: 10px;
                 padding-bottom: 15px;
+                white-space: nowrap;
+                overflow: hidden;
             }
             display: flex;
             justify-content: space-between;
@@ -86,10 +88,14 @@ main .banner img {
                 color: black;
                 margin: 0;
                 padding-bottom: 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             & .dish__info--content {
                 margin: 0;
                 font-size: 15px;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             animation: menu_appear 1s normal backwards ;
             @for $i from 1 through 9 {

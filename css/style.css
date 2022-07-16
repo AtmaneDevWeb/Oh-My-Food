@@ -498,6 +498,8 @@ main .banner img {
 .menu__dishes .dish .dish__info {
   padding-left: 10px;
   padding-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__dishes .dish .dish__info--name {
   font-family: "roboto", sans-serif;
@@ -506,10 +508,14 @@ main .banner img {
   color: black;
   margin: 0;
   padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__dishes .dish .dish__info--content {
   margin: 0;
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__dishes .dish:nth-child(1) {
   animation-delay: 0.3s;
