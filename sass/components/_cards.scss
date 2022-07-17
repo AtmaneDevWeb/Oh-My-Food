@@ -56,7 +56,11 @@
             font-size: 25px;
             padding-top: 10px;
             .empty-heart:hover {
-            background-color: $colorSecondary;
+                animation: filled 2s ease-out;
+                background:linear-gradient(#e991d1 10%, #9356dc 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
             }
         }
     }

@@ -83,7 +83,7 @@ p, h2, h3, input, li {
     border-left-color: #99e2d0;
   }
   75% {
-    transform: rotate(5000deg) scale(0.5);
+    transform: rotate(500deg) scale(0.5);
     border-top-color: #9356dc;
     border-right-color: #FF79DA;
     border-bottom-color: #99e2d0;
@@ -144,10 +144,21 @@ p, h2, h3, input, li {
 }
 @keyframes check_rotate {
   0% {
-    transform: rotate(-270deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(0);
+  }
+}
+@keyframes filled {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 main .city {
@@ -415,7 +426,11 @@ main .explore p {
   padding-top: 10px;
 }
 #restaurants .card .card__descript__icon .empty-heart:hover {
-  background-color: #FF79DA;
+  animation: filled 2s ease-out;
+  background: linear-gradient(#e991d1 10%, #9356dc 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 header {
@@ -439,6 +454,7 @@ header .title {
 main .banner img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 
 .menu {
