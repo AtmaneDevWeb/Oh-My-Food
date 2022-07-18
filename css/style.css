@@ -422,15 +422,41 @@ main .explore p {
 }
 #restaurants .card .card__descript__icon {
   display: flex;
-  font-size: 25px;
-  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
-#restaurants .card .card__descript__icon .empty-heart:hover {
-  animation: filled 2s ease-out;
-  background: linear-gradient(#e991d1 10%, #9356dc 90%);
+#restaurants .card .card__descript__icon .empty-heart {
+  position: absolute;
+  z-index: 2;
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 800ms;
+}
+#restaurants .card .card__descript__icon .filled-heart {
+  position: absolute;
+  z-index: 3;
+  font-size: 0;
+}
+#restaurants .card .card__descript__icon:hover .empty-heart {
+  color: transparent;
+  transition: all 1.6s;
+}
+#restaurants .card .card__descript__icon:hover .filled-heart {
+  background: -moz-linear-gradient(to bottom, #9356dc, #FF79DA);
+  background: -webkit-linear-gradient(to bottom, #9356dc, #FF79DA);
+  background: linear-gradient(to bottom, #9356dc, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  transition-duration: 1s;
+  font-size: 1.5rem;
 }
 
 header {
@@ -476,9 +502,43 @@ main .banner img {
   font-family: "shrikhand", cursive, sans-serif;
   font-size: 28px;
 }
-.menu__title .empty-heart {
-  font-size: 28px;
-  padding-right: 28px;
+.menu__title .menu__title--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.menu__title .menu__title--icon .empty-heart {
+  position: absolute;
+  z-index: 2;
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 800ms;
+}
+.menu__title .menu__title--icon .filled-heart {
+  position: absolute;
+  z-index: 3;
+  font-size: 0;
+}
+.menu__title .menu__title--icon:hover .empty-heart {
+  color: transparent;
+  transition: all 1.6s;
+}
+.menu__title .menu__title--icon:hover .filled-heart {
+  background: -moz-linear-gradient(to bottom, #9356dc, #FF79DA);
+  background: -webkit-linear-gradient(to bottom, #9356dc, #FF79DA);
+  background: linear-gradient(to bottom, #9356dc, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 1s;
+  font-size: 1.5rem;
 }
 .menu__dishes {
   margin-bottom: 35px;

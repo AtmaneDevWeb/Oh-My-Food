@@ -52,16 +52,23 @@
             }
         }
         & .card__descript__icon {
-            display: flex;
-            font-size: 25px;
-            padding-top: 10px;
-            .empty-heart:hover {
-                animation: filled 2s ease-out;
-                background:linear-gradient(#e991d1 10%, #9356dc 90%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: bold;
+                @include heart-icon;
+            & .empty-heart {
+                @include empty-heart;
             }
+            & .filled-heart {
+                @include filled-heart;
+            }
+            &:hover {
+                & .empty-heart {
+                    color: transparent;
+                        transition: all 1.6s;
+                    }
+                    & .filled-heart {
+                        @include heart-gradient;
+                        @include heart-gradient-hover;
+                    }
+                }
         }
     }
 }

@@ -22,3 +22,44 @@
 @mixin standard-shadow {
     box-shadow: 7px 9px 13px 0px grey;
 }
+
+@mixin heart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;    
+}
+
+@mixin empty-heart {
+    position: absolute;
+    z-index: 2;
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 800ms;
+}
+
+@mixin filled-heart {
+    position: absolute;
+    z-index: 3;
+    font-size: 0;
+}
+
+@mixin heart-gradient {
+    background: -moz-linear-gradient(to bottom, $colorPrimary, $colorSecondary); 
+    background: -webkit-linear-gradient(to bottom, $colorPrimary, $colorSecondary); 
+    background: linear-gradient(to bottom, $colorPrimary, $colorSecondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    transition-duration: 1s;
+}
+
+@mixin heart-gradient-hover {
+    font-size: 1.5rem;
+}
