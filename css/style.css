@@ -163,7 +163,7 @@ p, h2, h3, input, li {
 }
 main .city {
   display: flex;
-  padding-left: 20px;
+  padding-left: 40px;
   align-items: center;
   justify-content: center;
   background-color: #EAEAEA;
@@ -175,7 +175,7 @@ main .city i {
 }
 main .city .search__city {
   outline: 0 !important;
-  margin: 0;
+  margin-left: 3px;
   padding-top: 15px;
   padding-bottom: 14px;
   font-size: 16px;
@@ -258,7 +258,7 @@ main .explore p {
   margin-left: 25px;
   margin-bottom: 25px;
   height: 70px;
-  box-shadow: 7px 9px 13px 0px grey;
+  box-shadow: 3px 3px 15px lightgrey;
 }
 .fonction .fonction__item .fonction__num {
   background-color: #9356dc;
@@ -322,12 +322,13 @@ main .explore p {
 }
 
 .index_resto {
+  position: relative;
   justify-content: center;
   font-size: 33px;
   margin: 0;
   padding-top: 20px;
   padding-bottom: 15px;
-  box-shadow: -1px -3px 13px 0px grey;
+  box-shadow: 7px 9px 13px 0px grey;
 }
 
 .explore button:hover {
@@ -377,6 +378,7 @@ main .explore p {
   border-radius: 15px;
   background-color: white;
   padding-bottom: 20px;
+  box-shadow: 3px 3px 15px lightgrey;
 }
 #restaurants .card a {
   text-decoration: none;
@@ -460,21 +462,26 @@ main .explore p {
 }
 
 header {
-  font-size: 32px;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  display: flex;
+  position: relative;
   align-items: baseline;
 }
 header .home_back {
-  margin-left: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 header .back__icon {
   color: #1a1818;
   font-size: 22px;
+  margin-left: 25px;
 }
 header .title {
-  padding-left: 60px;
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: lighter;
 }
 
 main .banner img {
@@ -542,7 +549,6 @@ main .banner img {
 }
 .menu__dishes {
   margin-bottom: 35px;
-  cursor: pointer;
 }
 .menu__dishes h3 {
   text-transform: uppercase;
@@ -557,6 +563,7 @@ main .banner img {
 }
 .menu__dishes .dish {
   overflow: hidden;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -744,6 +751,19 @@ main .banner img {
   }
   .footer__title {
     font-size: 30px;
+  }
+  .media-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .media-desktop .menu__dishes {
+    width: 29%;
+  }
+  .media-desktop .menu__dishes .dish {
+    margin-bottom: 60px;
   }
 }
 

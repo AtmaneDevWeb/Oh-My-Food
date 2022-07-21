@@ -89,4 +89,17 @@ main .explore__btn {
     .footer__title {
         font-size: 30px;
     }
+    .media-desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        .menu__dishes {
+            width: 29%;
+            & .dish {
+                margin-bottom: 60px;
+            }
+        }
+    }
     }

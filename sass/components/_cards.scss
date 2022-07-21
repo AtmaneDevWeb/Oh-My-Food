@@ -3,11 +3,13 @@
     background-color: #F2F2F2;
     padding: 40px 20px;
     margin-top: 38px;
+    
         & .card{
         margin-bottom: 20px;
         border-radius: 15px;
         background-color: white;
         padding-bottom: 20px;
+        @include cards-shadow;
         & a {
             text-decoration: none;
         }

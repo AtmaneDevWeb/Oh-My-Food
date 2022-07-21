@@ -23,6 +23,10 @@
     box-shadow: 7px 9px 13px 0px grey;
 }
 
+@mixin cards-shadow {
+    box-shadow: 3px 3px 15px lightgrey
+}
+
 @mixin heart-icon {
     display: flex;
     justify-content: center;

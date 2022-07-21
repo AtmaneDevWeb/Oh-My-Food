@@ -1,6 +1,6 @@
 main .city {
     display: flex;
-    padding-left: 20px;
+    padding-left: 40px;
     align-items: center;
     justify-content: center;
     background-color: #EAEAEA;
@@ -11,7 +11,7 @@ main .city {
     }
     & .search__city {
         outline: 0 !important;
-        margin: 0;
+        margin-left: 3px;
         padding-top: 15px;
         padding-bottom: 14px;
         font-size: 16px;
@@ -86,7 +86,7 @@ main .explore {
         margin-left: 25px;
         margin-bottom: 25px;
         height: 70px;
-        @include standard-shadow;
+        @include cards-shadow;
         
         & .fonction__num {
             background-color: $colorPrimary;
