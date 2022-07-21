@@ -1,37 +1,41 @@
 @keyframes loader {
     0%{
-      
+      -webkit-transform: rotate(0deg) scale(0);
       transform: rotate(0deg) scale(0);
       border-top-color: $colorPrimary;
       border-right-color: $colorPrimary;
       border-bottom-color: $colorPrimary;
-        border-left-color: $colorPrimary;
+      border-left-color: $colorPrimary;
     }
     25%{
-        transform: rotate(180deg) scale(0.5);
-        border-top-color: $colorSecondary;
-        border-right-color: $colorSecondary;
-        border-bottom-color: $colorSecondary;
-        border-left-color: $colorSecondary;
+      -webkit-transform: rotate(180deg) scale(0.5);
+      transform: rotate(180deg) scale(0.5);
+      border-top-color: $colorSecondary;
+      border-right-color: $colorSecondary;
+      border-bottom-color: $colorSecondary;
+      border-left-color: $colorSecondary;
     }
     50% {
-       transform: rotate(360deg) scale(1.5);
-       border-top-color: $colorTertiary;
+      -webkit-transform: rotate(360deg) scale(1.5);
+      transform: rotate(360deg) scale(1.5);
+      border-top-color: $colorTertiary;
       border-right-color: $colorTertiary;
       border-bottom-color: $colorTertiary;
       border-left-color: $colorTertiary;
     }
     75%{
-        transform: rotate(500deg) scale(0.5);
-        border-top-color: $colorPrimary;
+      -webkit-transform: rotate(500deg) scale(0.5);
+      transform: rotate(500deg) scale(0.5);
+      border-top-color: $colorPrimary;
       border-right-color: $colorSecondary;
       border-bottom-color: $colorTertiary;
       border-left-color: $colorSecondary;
     
     }
     100%{
-       transform: rotate(720deg) scale(0);
-       border-top-color: $colorPrimary;
+      -webkit-transform: rotate(720deg) scale(0);
+      transform: rotate(720deg) scale(0);
+      border-top-color: $colorPrimary;
       border-right-color: $colorPrimary;
       border-bottom-color: $colorPrimary;
       border-left-color: $colorPrimary;
@@ -74,7 +78,7 @@
     }
     100% {
       opacity: 0;
-     z-index: -1;
+      z-index: -1;
       
     }
   }
@@ -85,11 +89,8 @@
       transform: translateY(10px);
       opacity: 0;
   }
-  50% {
-      opacity: 0.5;
-  }
   to {
-      -webkit-transform: translateY(10px);
+      -webkit-transform: translateY(0px);
       transform: translateY(0px);
       opacity: 1;
   }
@@ -97,19 +98,19 @@
 
 @keyframes check_rotate {
   0% {
+    -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
   }
   100% {
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 }
+
 @keyframes filled {
   0%{
       opacity: 0;
   }
-  50%{
-    opacity: 0.5;
-}
 
   100%{
       opacity: 1;

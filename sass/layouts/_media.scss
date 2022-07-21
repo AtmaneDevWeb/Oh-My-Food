@@ -1,3 +1,4 @@
+
 /* Format tablette */
 
 @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-max) {
@@ -10,13 +11,15 @@ main .explore__btn {
     display: flex;
     padding-right: 20px;
 }
-
-.restaurants__cards {
+.card {
+    width: 45%;
+}
+ .restaurants__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
-}
+ }
 
 #restaurants .card .card__image img {
     width: 450px;
@@ -31,22 +34,41 @@ main .explore__btn {
 }
 }
 
+
 /* Format desktop */
 
 @media screen and (min-width: $breakpoint-desktop) {
 	header {
         font-size: 50px;
         letter-spacing: 5px;
-        justify-content: left;
-        padding-left: 20px;
+        & .home_back {
+            top: -10px;
+        }
+        & .back__icon {
+            margin-left: 25px;
+            font-size: 25px;
+        }
+        & .title {
+            font-size: 40px;
+        }
     }
 
-    main .city i {
-        font-size: 30px;
+    header.index_resto h1 {
+        
+            font-size: 40px;
         }
-        main .city .search__city {
-            font-size: 25px;
+    
+    main .city {
+        padding-left: 40px;
+        & .city i {
+            font-size: 20px;
+            }
+        & .city .search__city {
+            font-size: 20px;
         }  
+    }
+    
+       
         main .explore br {
             display: none;
            
@@ -55,12 +77,12 @@ main .explore__btn {
             padding-bottom: 25px;
         }
         form.explore__form {
-            padding-top: 20px
-        ;
+            padding-top: 20px;
         }
         main .explore__btn {
             width: 400px;
     }
+    
     .fonction__list {
         display: flex;
         padding-right: 20px;
@@ -77,6 +99,23 @@ main .explore__btn {
     
     }
 
+    main .banner {
+        height: 500px;
+        & .img {
+            width: 100%;
+        }
+    }
+    .menu__dishes {
+        margin: 0;
+    }
+    .menu__dishes--title {
+        padding-bottom: 20px;
+    }
+    .menu__btn {
+        width: 20%;
+        margin-top: -45px;
+        margin-bottom: 0px;
+    }
     #restaurants .card .card__image img {
         width: 300px;
         height: 200px;
@@ -102,4 +141,4 @@ main .explore__btn {
             }
         }
     }
-    }
+}
