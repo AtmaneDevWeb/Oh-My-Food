@@ -85,14 +85,6 @@ p, h2, h3, input, li {
     border-bottom-color: #99e2d0;
     border-left-color: #99e2d0;
   }
-  75% {
-    -webkit-transform: rotate(500deg) scale(0.5);
-    transform: rotate(500deg) scale(0.5);
-    border-top-color: #9356dc;
-    border-right-color: #FF79DA;
-    border-bottom-color: #99e2d0;
-    border-left-color: #FF79DA;
-  }
   100% {
     -webkit-transform: rotate(720deg) scale(0);
     transform: rotate(720deg) scale(0);
@@ -106,26 +98,8 @@ p, h2, h3, input, li {
   0% {
     opacity: 0.9;
   }
-  12% {
-    opacity: 0.8;
-  }
-  25% {
-    opacity: 0.7;
-  }
-  38% {
-    opacity: 0.6;
-  }
   50% {
     opacity: 0.5;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  80% {
-    opacity: 0.3;
-  }
-  90% {
-    opacity: 0.2;
   }
   100% {
     opacity: 0;
@@ -193,8 +167,8 @@ main .explore {
 main .explore h2 {
   margin: 0;
   padding-top: 45px;
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 23px;
+  font-weight: 700;
 }
 main .explore__btn {
   width: 59%;
@@ -217,7 +191,7 @@ main .explore__btn {
 main .explore__btn:hover {
   transition: 0.4s;
   filter: brightness(110%);
-  box-shadow: 7px 9px 13px 0px grey;
+  box-shadow: 1px 3px 13px 0px grey;
 }
 main .explore p {
   margin: 0;
@@ -311,7 +285,7 @@ main .explore p {
   position: fixed;
   inset: 0;
   margin: auto;
-  margin-top: 400px;
+  margin-top: 270px;
   border: 10px solid;
   width: 120px;
   height: 120px;
@@ -321,6 +295,7 @@ main .explore p {
 }
 
 .index_resto {
+  text-align: center;
   position: relative;
   justify-content: center;
   margin: 0;
@@ -329,8 +304,9 @@ main .explore p {
   padding-bottom: 15px;
   box-shadow: -1px -3px 13px 0px grey;
 }
-.index_resto h1 {
-  text-align: center;
+.index_resto img {
+  width: 160px;
+  height: 30px;
 }
 
 .explore button:hover {
@@ -460,7 +436,7 @@ main .explore p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 1s;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 header {
@@ -551,7 +527,7 @@ main .banner img {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 1s;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 .menu__dishes {
   margin-bottom: 35px;
@@ -681,7 +657,7 @@ main .banner img {
 .menu__btn:hover {
   transition: 0.4s;
   filter: brightness(110%);
-  box-shadow: 7px 9px 13px 0px grey;
+  box-shadow: 1px 3px 13px 0px grey;
 }
 
 /* Format tablette */

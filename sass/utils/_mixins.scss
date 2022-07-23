@@ -19,7 +19,7 @@
 }
 
 @mixin standard-shadow {
-    box-shadow: 7px 9px 13px 0px grey;
+    box-shadow:1px 3px 13px 0px grey;
 }
 
 @mixin cards-shadow {
@@ -64,5 +64,5 @@
 }
 
 @mixin heart-gradient-hover {
-    font-size: 1.5rem;
+    font-size: 24px;
 }

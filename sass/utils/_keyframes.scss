@@ -23,15 +23,6 @@
       border-bottom-color: $colorTertiary;
       border-left-color: $colorTertiary;
     }
-    75%{
-      -webkit-transform: rotate(500deg) scale(0.5);
-      transform: rotate(500deg) scale(0.5);
-      border-top-color: $colorPrimary;
-      border-right-color: $colorSecondary;
-      border-bottom-color: $colorTertiary;
-      border-left-color: $colorSecondary;
-    
-    }
     100%{
       -webkit-transform: rotate(720deg) scale(0);
       transform: rotate(720deg) scale(0);
@@ -40,46 +31,18 @@
       border-bottom-color: $colorPrimary;
       border-left-color: $colorPrimary;
     }
-    
-  }
+}
 
   @keyframes vanish {
     0% {
       opacity: 0.9;
-      
-    }
-    12% {
-      opacity: 0.8;
-     
-    }
-    25% {
-      opacity: 0.7;
-      
-    }
-    38% {
-      opacity: 0.6;
-      
     }
     50% {
       opacity: 0.5;
-      
-    }
-    65% {
-      opacity: 0.4;
-     
-    }
-    80% {
-      opacity: 0.3;
-      
-    }
-    90% {
-      opacity: 0.2;
-     
     }
     100% {
       opacity: 0;
       z-index: -1;
-      
     }
   }
 
@@ -88,12 +51,12 @@
       -webkit-transform: translateY(10px);  
       transform: translateY(10px);
       opacity: 0;
-  }
-  to {
+    }
+    to {
       -webkit-transform: translateY(0px);
       transform: translateY(0px);
       opacity: 1;
-  }
+    }
 }
 
 @keyframes check_rotate {
