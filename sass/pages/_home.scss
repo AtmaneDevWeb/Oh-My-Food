@@ -36,12 +36,11 @@ main .explore {
     }
 
     &__btn {
-
-        @include btn;
         width: 60%;
         height: 50px;
         font-size: 17px;
         margin-bottom: 40px;
+        @include btn;
         @include btn_shadow;
     }
 
@@ -154,10 +153,9 @@ main .explore {
     inset: 0;
     margin: auto;
     margin-top: 270px;
-    border: 10px solid;
-    width: 120px;
-    height: 120px;
+    border: 14px solid;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     animation: loader 3s forwards;
-    animation-fill-mode: forwards;
 }

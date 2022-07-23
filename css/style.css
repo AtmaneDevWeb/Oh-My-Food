@@ -171,6 +171,10 @@ main .explore h2 {
   font-weight: 700;
 }
 main .explore__btn {
+  width: 60%;
+  height: 50px;
+  font-size: 17px;
+  margin-bottom: 40px;
   background: linear-gradient(#e991d1 10%, #9356dc 90%);
   border-radius: 27px;
   cursor: pointer;
@@ -181,10 +185,6 @@ main .explore__btn {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   transition-duration: 1s;
-  width: 60%;
-  height: 50px;
-  font-size: 17px;
-  margin-bottom: 40px;
   box-shadow: 1px 4px 5px 0px grey;
 }
 main .explore__btn:hover {
@@ -285,14 +285,14 @@ main .explore p {
   inset: 0;
   margin: auto;
   margin-top: 270px;
-  border: 10px solid;
-  width: 120px;
-  height: 120px;
+  border: 14px solid;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   animation: loader 3s forwards;
-  animation-fill-mode: forwards;
 }
 
+/*****Home Page Header*****/
 .index_resto {
   text-align: center;
   position: relative;
@@ -428,7 +428,6 @@ main .explore p {
   transition: all 1.6s;
 }
 #restaurants .card .card__descript__icon:hover .filled-heart {
-  background: -moz-linear-gradient(to bottom, #9356dc, #FF79DA);
   background: -webkit-linear-gradient(to bottom, #9356dc, #FF79DA);
   background: linear-gradient(to bottom, #9356dc, #FF79DA);
   -webkit-background-clip: text;
@@ -519,7 +518,6 @@ main .banner img {
   transition: all 1.6s;
 }
 .menu__title .menu__title--icon:hover .filled-heart {
-  background: -moz-linear-gradient(to bottom, #9356dc, #FF79DA);
   background: -webkit-linear-gradient(to bottom, #9356dc, #FF79DA);
   background: linear-gradient(to bottom, #9356dc, #FF79DA);
   -webkit-background-clip: text;

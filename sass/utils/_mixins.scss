@@ -56,7 +56,6 @@
 }
 
 @mixin heart-gradient {
-    background: -moz-linear-gradient(to bottom, $colorPrimary, $colorSecondary);
     background: -webkit-linear-gradient(to bottom, $colorPrimary, $colorSecondary);
     background: linear-gradient(to bottom, $colorPrimary, $colorSecondary);
     -webkit-background-clip: text;
