@@ -1,62 +1,62 @@
 @keyframes loader {
-    0%{
-      -webkit-transform: rotate(0deg) scale(0);
-      transform: rotate(0deg) scale(0);
-      border-top-color: $colorPrimary;
-      border-right-color: $colorPrimary;
-      border-bottom-color: $colorPrimary;
-      border-left-color: $colorPrimary;
-    }
-    25%{
-      -webkit-transform: rotate(180deg) scale(0.5);
-      transform: rotate(180deg) scale(0.5);
-      border-top-color: $colorSecondary;
-      border-right-color: $colorSecondary;
-      border-bottom-color: $colorSecondary;
-      border-left-color: $colorSecondary;
-    }
-    50% {
-      -webkit-transform: rotate(360deg) scale(1.5);
-      transform: rotate(360deg) scale(1.5);
-      border-top-color: $colorTertiary;
-      border-right-color: $colorTertiary;
-      border-bottom-color: $colorTertiary;
-      border-left-color: $colorTertiary;
-    }
-    100%{
-      -webkit-transform: rotate(720deg) scale(0);
-      transform: rotate(720deg) scale(0);
-      border-top-color: $colorPrimary;
-      border-right-color: $colorPrimary;
-      border-bottom-color: $colorPrimary;
-      border-left-color: $colorPrimary;
-    }
+  0% {
+    -webkit-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    border-top-color: $colorPrimary;
+    border-right-color: $colorPrimary;
+    border-bottom-color: $colorPrimary;
+    border-left-color: $colorPrimary;
+  }
+  25% {
+    -webkit-transform: rotate(180deg) scale(0.5);
+    transform: rotate(180deg) scale(0.5);
+    border-top-color: $colorSecondary;
+    border-right-color: $colorSecondary;
+    border-bottom-color: $colorSecondary;
+    border-left-color: $colorSecondary;
+  }
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+    border-top-color: $colorTertiary;
+    border-right-color: $colorTertiary;
+    border-bottom-color: $colorTertiary;
+    border-left-color: $colorTertiary;
+  }
+  100% {
+    -webkit-transform: rotate(720deg) scale(0);
+    transform: rotate(720deg) scale(0);
+    border-top-color: $colorPrimary;
+    border-right-color: $colorPrimary;
+    border-bottom-color: $colorPrimary;
+    border-left-color: $colorPrimary;
+  }
 }
 
-  @keyframes vanish {
-    0% {
-      opacity: 0.9;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0;
-      z-index: -1;
-    }
+@keyframes vanish {
+  0% {
+    opacity: 0.9;
   }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 
-  @keyframes menu_appear {
-    from {
-      -webkit-transform: translateY(10px);  
-      transform: translateY(10px);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-      opacity: 1;
-    }
+@keyframes menu_appear {
+  from {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes check_rotate {
@@ -71,11 +71,10 @@
 }
 
 @keyframes filled {
-  0%{
-      opacity: 0;
+  0% {
+    opacity: 0;
   }
-
-  100%{
-      opacity: 1;
+  100% {
+    opacity: 1;
   }
 }

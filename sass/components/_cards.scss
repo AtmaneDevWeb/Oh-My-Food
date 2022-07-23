@@ -1,28 +1,31 @@
-
 #restaurants {
     background-color: #F2F2F2;
     padding: 40px 20px;
     margin-top: 38px;
-    
-        & .card{
+
+    & .card {
         margin-bottom: 20px;
         border-radius: 15px;
         background-color: white;
         padding-bottom: 20px;
         @include cards-shadow;
+
         & a {
             text-decoration: none;
         }
+
         & .card__image {
-            display:flex;
+            display: flex;
             position: relative;
         }
+
         & .card__image img {
             width: 100%;
-            height:200px;
+            height: 200px;
             border-radius: 15px 15px 0 0;
             object-fit: cover;
         }
+
         & .card__image__textcover {
             position: absolute;
             padding: 7px 10px;
@@ -34,6 +37,7 @@
             top: 15px;
             right: 15px;
         }
+
         & .card__descript {
             display: flex;
             padding-right: 20px;
@@ -41,6 +45,7 @@
             justify-content: space-between;
             align-items: center;
             color: #000;
+
             & .card__descript__title {
                 margin: 0;
                 padding-top: 20px;
@@ -48,29 +53,35 @@
                 font-size: 19px;
                 font-weight: bold;
             }
+
             & .card__descript__place {
                 font-size: 17px;
 
             }
         }
+
         & .card__descript__icon {
-                @include heart-icon;
+            @include heart-icon;
+
             & .empty-heart {
                 @include empty-heart;
             }
+
             & .filled-heart {
                 @include filled-heart;
             }
+
             &:hover {
                 & .empty-heart {
                     color: transparent;
-                        transition: all 1.6s;
-                    }
-                    & .filled-heart {
-                        @include heart-gradient;
-                        @include heart-gradient-hover;
-                    }
+                    transition: all 1.6s;
                 }
+
+                & .filled-heart {
+                    @include heart-gradient;
+                    @include heart-gradient-hover;
+                }
+            }
         }
     }
 }

@@ -1,6 +1,4 @@
 @mixin btn {
-    width: 59%;
-    height: 57px;
     background: linear-gradient(#e991d1 10%, #9356dc 90%);
     border-radius: 27px;
     cursor: pointer;
@@ -19,7 +17,7 @@
 }
 
 @mixin standard-shadow {
-    box-shadow:1px 3px 13px 0px grey;
+    box-shadow: 1px 3px 13px 0px grey;
 }
 
 @mixin cards-shadow {
@@ -36,7 +34,7 @@
     font-size: 1.4rem;
     position: relative;
     z-index: 1;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 @mixin empty-heart {
@@ -54,12 +52,12 @@
 }
 
 @mixin heart-gradient {
-    background: -moz-linear-gradient(to bottom, $colorPrimary, $colorSecondary); 
-    background: -webkit-linear-gradient(to bottom, $colorPrimary, $colorSecondary); 
+    background: -moz-linear-gradient(to bottom, $colorPrimary, $colorSecondary);
+    background: -webkit-linear-gradient(to bottom, $colorPrimary, $colorSecondary);
     background: linear-gradient(to bottom, $colorPrimary, $colorSecondary);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
     transition-duration: 1s;
 }
 

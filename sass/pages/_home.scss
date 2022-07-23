@@ -5,10 +5,12 @@ main .city {
     justify-content: center;
     background-color: #EAEAEA;
     gap: 17px;
+
     & i {
         font-size: 16px;
         color: #353535;
     }
+
     & .search__city {
         outline: 0 !important;
         padding-top: 15px;
@@ -20,29 +22,33 @@ main .city {
         background-color: #EAEAEA;
     }
 }
+
 main .explore {
     text-align: center;
     background-color: #f9f8f6;
     padding-bottom: 15px;
+
     & h2 {
         margin: 0;
         padding-top: 45px;
         font-size: 23px;
         font-weight: 700;
     }
+
     &__btn {
-        
+
         @include btn;
-        width: 54%;
+        width: 60%;
         height: 50px;
         font-size: 17px;
         margin-bottom: 40px;
-        
     }
+
     &__btn:hover {
         @include btn_hover;
         @include standard-shadow;
     }
+
     & p {
         margin: 0;
         padding-top: 15px;
@@ -50,10 +56,9 @@ main .explore {
         color: black;
         font-size: 19px;
         font-weight: lighter;
-        font-family:$font-fam-text;
+        font-family: $font-fam-text;
     }
-    
-} 
+}
 
 .fonction {
     & h2 {
@@ -63,8 +68,8 @@ main .explore {
         padding-top: 40px;
         padding-bottom: 66px;
         margin-left: 20px;
-        
     }
+
     & h2.restaurants__title {
         margin: 0px;
         padding-bottom: 0px;
@@ -72,9 +77,11 @@ main .explore {
         font-weight: bold;
         font-size: 24px;
     }
+
     & .fontion__list {
         display: flex;
     }
+
     & .fonction__item {
         width: 90%;
         align-items: center;
@@ -86,7 +93,7 @@ main .explore {
         margin-bottom: 25px;
         height: 70px;
         @include cards-shadow;
-        
+
         & .fonction__num {
             background-color: $colorPrimary;
             width: 27px;
@@ -98,6 +105,7 @@ main .explore {
             line-height: 27px;
             margin-left: -10px;
         }
+
         & .fonction__icon {
             width: 20px;
             height: 20px;
@@ -106,50 +114,49 @@ main .explore {
             padding-left: 25px;
             padding-right: 25px;
             font-weight: bold;
-                    }
+        }
+
         & .fonction__txt {
             font-size: 16px;
             font-family: $font-fam-text;
             font-weight: 500;
             padding-left: 15px;
-            color:black
+            color: black
         }
     }
+
     & .fonction__item:hover {
         transition: 1.5s;
-        background-color:#efe6fb;
-        
+        background-color: #efe6fb;
     }
+
     & .fonction__item:hover .fonction__icon {
         transition: 1.5s;
         filter: brightness(97%);
         color: $colorPrimary;
-        
     }
 }
+
 .loader {
-      width: 100%;
-      height: 100%;
-      background: #F0F0F0;
-      position: fixed;
-      inset: 0;
-      opacity: 0.95;
-      z-index: 1000;
-      animation: vanish 1s 2s forwards;
-    
-  }
-  .loader_anim{
+    width: 100%;
+    height: 100%;
+    background: #F0F0F0;
     position: fixed;
     inset: 0;
-    margin:auto;
+    opacity: 0.95;
+    z-index: 1000;
+    animation: vanish 1s 2s forwards;
+}
+
+.loader_anim {
+    position: fixed;
+    inset: 0;
+    margin: auto;
     margin-top: 270px;
-    border: 10px solid ;
+    border: 10px solid;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    animation: loader 3s forwards ;
+    animation: loader 3s forwards;
     animation-fill-mode: forwards;
-    
-  }  
-
-  
+}

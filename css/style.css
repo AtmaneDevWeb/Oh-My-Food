@@ -1,8 +1,60 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,7 +66,11 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   text-size-adjust: none;
 }
 
-footer, header, nav, section, main {
+footer,
+header,
+nav,
+section,
+main {
   display: block;
 }
 
@@ -22,15 +78,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -56,7 +117,11 @@ h2 {
   font-size: 22px;
 }
 
-p, h2, h3, input, li {
+p,
+h2,
+h3,
+input,
+li {
   font-family: "roboto", sans-serif;
 }
 
@@ -171,8 +236,6 @@ main .explore h2 {
   font-weight: 700;
 }
 main .explore__btn {
-  width: 59%;
-  height: 57px;
   background: linear-gradient(#e991d1 10%, #9356dc 90%);
   border-radius: 27px;
   cursor: pointer;
@@ -183,7 +246,7 @@ main .explore__btn {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   transition-duration: 1s;
-  width: 54%;
+  width: 60%;
   height: 50px;
   font-size: 17px;
   margin-bottom: 40px;
@@ -641,8 +704,8 @@ main .banner img {
   margin: 50px 0 70px 0;
 }
 .menu__btn {
-  width: 59%;
-  height: 57px;
+  width: 50%;
+  height: 50px;
   background: linear-gradient(#e991d1 10%, #9356dc 90%);
   border-radius: 27px;
   cursor: pointer;

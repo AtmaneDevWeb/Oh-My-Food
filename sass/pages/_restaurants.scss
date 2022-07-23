@@ -1,7 +1,7 @@
 header {
     position: relative;
     align-items: baseline;
-   
+
     & .home_back {
         position: absolute;
         display: flex;
@@ -25,22 +25,26 @@ header {
     }
 }
 
-// *********************** Main section ****************************************
+// ******* Main section *************
 main .banner {
     height: 245px;
     display: flex;
 }
+
 main .banner img {
     width: 100%;
-    
+
     object-fit: cover;
 }
+
+// ******* Menu section *************
 .menu {
     position: relative;
     background-color: #F6F6F6;
     border-radius: 60px 60px 0 0;
     margin-top: -60px;
     padding: 20px;
+
     &__title {
         display: flex;
         justify-content: space-between;
@@ -48,38 +52,46 @@ main .banner img {
         align-items: center;
         padding-top: 20px;
         padding-bottom: 40px;
+
         & h2 {
             font-family: $font-fam-title;
             font-size: 28px;
         }
+
         & .menu__title--icon {
             @include heart-icon;
-        & .empty-heart {
-            @include empty-heart;
-            }
-        & .filled-heart {
-            @include filled-heart;
-            }
-        &:hover {
+
             & .empty-heart {
-                color: transparent;
+                @include empty-heart;
+            }
+
+            & .filled-heart {
+                @include filled-heart;
+            }
+
+            &:hover {
+                & .empty-heart {
+                    color: transparent;
                     transition: all 1.6s;
                 }
+
                 & .filled-heart {
                     @include heart-gradient;
                     @include heart-gradient-hover;
                 }
             }
         }
-        
+
     }
+
     &__dishes {
 
-            & h3 {
+        & h3 {
             text-transform: uppercase;
             margin-bottom: 15px;
-            
+
         }
+
         .menu__dishes--title:after {
             display: block;
             content: " ";
@@ -87,29 +99,33 @@ main .banner img {
             width: 38px;
             margin-top: 7px;
         }
+
         .dish {
             overflow: hidden;
             cursor: pointer;
+
             &:hover .dish__check {
                 margin-right: 0;
+
                 i {
                     animation: check_rotate 1s ease;
                 }
-            }       
-            
+            }
+
             & .dish__info {
                 padding-left: 10px;
                 padding-bottom: 15px;
                 white-space: nowrap;
                 overflow: hidden;
             }
+
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             background-color: white;
             border-radius: 20px;
             margin-bottom: 20px;
-            
+
             & .dish__info--name {
                 font-family: $font-fam-text;
                 font-weight: 500;
@@ -120,33 +136,35 @@ main .banner img {
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+
             & .dish__info--content {
                 margin: 0;
                 font-size: 15px;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            animation: menu_appear 1s normal backwards ;
+            animation: menu_appear 1s normal backwards;
             animation-duration: 3s;
+
             @for $i from 1 through 9 {
                 &:nth-child(#{$i}) {
                     animation-delay: 0.3s * $i;
                 }
-               
-                }
-        
-                        
+            }
         }
+
         & .dish__price {
             font-weight: 500;
             font-size: 16px;
             margin-left: auto;
             margin-bottom: 15px;
             margin-right: 15px;
+
             p {
                 margin: 0;
             }
         }
+
         & .dish__check {
             display: flex;
             justify-content: center;
@@ -157,31 +175,27 @@ main .banner img {
             height: 70px;
             background-color: $colorTertiary;
             transition: margin-right 0.8s;
-            
+
             & i {
                 color: white;
                 font-size: 25px;
             }
-           
-           
         }
-        
         margin-bottom: 35px;
-        
-       
-       
-        
     }
+
     &__form {
         display: flex;
         justify-content: center;
         margin: 50px 0 70px 0;
-        
     }
+
     &__btn {
-        
-        @include btn;       
+        width: 50%;
+        height: 50px;
+        @include btn;
     }
+
     &__btn:hover {
         @include btn_hover;
         @include standard-shadow;
