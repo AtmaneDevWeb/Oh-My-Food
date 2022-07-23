@@ -42,6 +42,7 @@ main .explore {
         height: 50px;
         font-size: 17px;
         margin-bottom: 40px;
+        @include btn_shadow;
     }
 
     &__btn:hover {

@@ -17,7 +17,11 @@
 }
 
 @mixin standard-shadow {
-    box-shadow: 1px 3px 13px 0px grey;
+    box-shadow: 7px 12px 14px 0px grey;
+}
+
+@mixin btn_shadow {
+    box-shadow: 1px 4px 5px 0px grey;
 }
 
 @mixin cards-shadow {

@@ -194,6 +194,7 @@ main .banner img {
         width: 50%;
         height: 50px;
         @include btn;
+        @include btn_shadow;
     }
 
     &__btn:hover {
