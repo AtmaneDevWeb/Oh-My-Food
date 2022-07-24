@@ -406,7 +406,7 @@ main .explore p {
   margin-right: 10px;
   width: 28px;
   height: 28px;
-  font-size: 1.4rem;
+  font-size: 23px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -496,7 +496,7 @@ main .banner img {
   margin-right: 10px;
   width: 28px;
   height: 28px;
-  font-size: 1.4rem;
+  font-size: 23px;
   position: relative;
   z-index: 1;
   overflow: hidden;
